@@ -2,42 +2,232 @@
 {% block css %}
 <style type="text/css">
   /* Set the size of the div element that contains the map */
-  #map {
-    height: 400px;
-    /* The height is 400 pixels */
-    width: 400px;
+  .map {
+    height: 350px;
+    /* The height is 350 pixels */
+    width: 100%;
     /* The width is the width of the web page */
   }
 </style>
+
+
 {% endblock %}
+
+
 {% block content %}
-<script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-k9-SjNOqvY_GhDQvSOk_bPQEoOMWDAQ&callback=initMap&libraries=&v=weekly"
-  defer>
-</script>
-<script>
-  // Initialize and add the map
-  function initMap() {
-    // The location of Uluru
-    const uluru = {
-      lat: 33.057607054273326,
-      lng: -96.73213424412899
-    };
-    // The map, centered at Uluru
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 20,
-      center: uluru,
-    });
-    // The marker, positioned at Uluru
-    const marker = new google.maps.Marker({
-      position: uluru,
-      map: map,
-    });
-  }
-</script>
-<div id="map"></div>
-<h1>Indopak Supermarket</h1>
-<p>Welcome to Indopak</p>
+<div class="container">
+  <section id="top">
+    <br>
+    <h1>Indopak Mission Statement</h1>
+    <p>Welcome to Indopak </p>
+  </section>
+
+
+  <section id="location">
+    <br>
+    <br>
+    <br>
+    <h1>Locations</h1>
+    <br>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-k9-SjNOqvY_GhDQvSOk_bPQEoOMWDAQ&callback=initMap&libraries=&v=weekly"
+      defer>
+    </script>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Plano
+        const plano = {
+          lat: 33.05760705427325,
+          lng: -96.73213424412899
+        };
+        // The map, centered at Plano
+        const map1 = new google.maps.Map(document.getElementById("map1"), {
+          zoom: 18,
+          center: plano,
+        });
+        // The marker, positioned at Plano
+        const marker1 = new google.maps.Marker({
+          position: plano,
+          map: map1,
+        });
+
+
+
+        // The location of Richardson
+        const richardson = {
+          lat: 32.94788595966537,
+          lng: -96.72925184045685
+        };
+        // The map, centered at Richardson
+        const map2 = new google.maps.Map(document.getElementById("map2"), {
+          zoom: 18,
+          center: richardson,
+        });
+        // The marker, positioned at Richardson
+        const marker2 = new google.maps.Marker({
+          position: richardson,
+          map: map2,
+        });
+
+
+
+        // The location of Arlington
+        const arlington = {
+          lat: 32.65851369899025,
+          lng: -97.11733735764683
+        };
+        // The map, centered at Arlington
+        const map3 = new google.maps.Map(document.getElementById("map3"), {
+          zoom: 18,
+          center: arlington,
+        });
+        // The marker, positioned at Arlington
+        const marker3 = new google.maps.Marker({
+          position: arlington,
+          map: map3,
+        });
+
+
+
+        // The location of Lewisville
+        const lewisville = {
+          lat: 33.004400701694635,
+          lng: -96.99746651531052
+        };
+        // The map, centered at Lewisville
+        const map4 = new google.maps.Map(document.getElementById("map4"), {
+          zoom: 18,
+          center: lewisville,
+        });
+        // The marker, positioned at Lewisville
+        const marker4 = new google.maps.Marker({
+          position: lewisville,
+          map: map4,
+        });
+
+
+
+        // The location of Carrollton
+        const carrollton = {
+          lat: 32.98198937989808,
+          lng: -96.91943367284061
+        };
+        // The map, centered at Carrollton
+        const map5 = new google.maps.Map(document.getElementById("map5"), {
+          zoom: 18,
+          center: carrollton,
+        });
+        // The marker, positioned at Carrollton
+        const marker5 = new google.maps.Marker({
+          position: carrollton,
+          map: map5,
+        });
+
+
+
+        // The location of Murphy
+        const murphy = {
+          lat: 33.01037652217639,
+          lng: -96.62288278818497
+        };
+        // The map, centered at Murphy
+        const map6 = new google.maps.Map(document.getElementById("map6"), {
+          zoom: 18,
+          center: murphy,
+        });
+        // The marker, positioned at Murphy
+        const marker6 = new google.maps.Marker({
+          position: murphy,
+          map: map6,
+        });
+      }
+    </script>
+    <div class="row">
+      <div class="col-6">
+        <h1>Plano</h1>
+        <p>2060 W Spring Creek Pkwy #4285, Plano, TX 75023</p>
+        <a href=972-517-7031">(972) 517-7031</a>
+      </div>
+      <div class="col-6">
+        <div id="map1" class="map"></div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-6">
+        <h1>Richardson</h1>
+        <p>323 E Polk St, Richardson, TX 75081</p>
+        <a href="972-644-7900">(972) 644-7900</a>
+      </div>
+      <div class="col-6">
+        <div id="map2" class="map"></div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-6">
+        <h1>Arlington</h1>
+        <p>808 SW Green Oaks Blvd, Arlington, TX 76017</p>
+        <a href="tel:817-466-2016">(817) 466-2016</a>
+      </div>
+      <div class="col-6">
+        <div id="map3" class="map"></div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-6">
+        <h1>Lewisville</h1>
+        <p>297 W Round Grove Rd, Lewisville, TX 75067</p>
+        <a href="tel:972-906-2980">(972) 906-2980</a>
+      </div>
+      <div class="col-6">
+        <div id="map4" class="map"></div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-6">
+        <h1>Carrollton</h1>
+        <p>112, 1454, 2548 Dickerson Pkwy, Carrollton, TX 75006</p>
+        <a href="tel:972-323-2002">(972) 323-2002</a>
+      </div>
+      <div class="col-6">
+        <div id="map5" class="map"></div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-6">
+        <h1>Murphy</h1>
+        <p>416 Village Dr, Murphy, TX 75094</p>
+        <p>TBD</p>
+      </div>
+      <div class="col-6">
+        <div id="map6" class="map"></div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+  </section>
+
+  <section id="faq">
+    <h1>FAQ</h1>
+    <p>Is it halal? </p>
+    <p>Yes </p>
+    <br>
+  </section>
+</div>
+
+
 {% endblock %}
+
 {% block js %}
 {% endblock %}

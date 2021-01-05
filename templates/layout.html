@@ -24,8 +24,7 @@
 </head>
 <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <!-- Container wrapper -->
         <div class="container">
             <!-- Logo -->
@@ -55,13 +54,13 @@
             <!-- Left links -->
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="{{url_for('home')}}">Home</a>
+                <a class="nav-link" aria-current="page" href="{{url_for('home', _anchor='top') }}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Location</a>
+                <a class="nav-link" href="{{url_for('home', _anchor='location') }}">Locations</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="{{url_for('home', _anchor='faq') }}">FAQ</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{{url_for('cafe')}}">Cafe</a>
