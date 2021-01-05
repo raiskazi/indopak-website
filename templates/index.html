@@ -1,12 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indopak</title>
-</head>
-<body>
-    <h1>Indopak Supermarket</h1>
-    <p>Welcome to Indopak</p>
-</body>
-</html>
+{% extends "layout.html" %}
+{% block css %}
+<style>
+#map {
+height: 400px;
+width: 100%;
+}
+</style>
+{% endblock %}
+{% block content %}
+    
+  <div id="map"></div>
+  <h1>Indopak Supermarket</h1>
+  <p>Welcome to Indopak</p>
+{% endblock %}
+{% block js %}
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+
+    ></script>
+<script>
+  function initMap() {
+    // The location of Uluru
+    const uluru = { lat: -25.344, lng: 131.036 };
+    // The map, centered at Uluru
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 4,
+      center: uluru,
+    });
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+    });
+  }
+</script>
+{% endblock %}

@@ -2,10 +2,18 @@ from flask import Flask, render_template, url_for
 app = Flask(__name__)
 
 @app.route("/")
-def hello():
+def home():
     return render_template('index.html')
 
 @app.route("/cafe")
-def home():
-    return "<h1>Cafe<h1>"
+def cafe():
+    return render_template('cafe.html')
+
+@app.route("/butcher")
+def butcher():
+    return render_template('butcher.html')
+
+@app.route("/about")
+def about():
+    return render_template('about.html')
 
