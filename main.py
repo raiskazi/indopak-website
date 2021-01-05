@@ -15,6 +15,9 @@ def cafe():
 def butcher():
     return render_template('butcher.html')
 
+@app.route("/banquet")
+def banquet():
+    return render_template('banquet.html')
 
 @app.route("/about")
 def about():

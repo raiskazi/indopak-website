@@ -62,11 +62,38 @@
               <li class="nav-item">
                 <a class="nav-link" href="{{url_for('home', _anchor='faq') }}">FAQ</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{{url_for('cafe')}}">Cafe</a>
+
+              <!-- Navbar dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Cafe
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Plano</a></li>
+                  <li><a class="dropdown-item" href="#">Richardson</a></li>
+                  <li><a class="dropdown-item" href="#">Arlington</a></li>
+                  <li><a class="dropdown-item" href="#">Lewisville</a></li>
+                  <li><a class="dropdown-item" href="#">Carrollton</a></li>
+                  <li><a class="dropdown-item" href="#">Murphy</a></li>
+                </ul>
               </li>
+
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="{{url_for('cafe')}}">Cafe</a>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="{{url_for('butcher')}}">Butcher</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{url_for('banquet')}}">Banquet Hall</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{{url_for('about')}}">About Us</a>
