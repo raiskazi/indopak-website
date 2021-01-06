@@ -10,6 +10,17 @@
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.css" rel="stylesheet" />
   <style>
+      #intro-example {
+    height: 400px;
+  }
+
+  /* Height for devices larger than 992px */
+  @media (min-width: 992px) {
+    #intro-example {
+      height: 600px;
+    }
+  }
+  
     /* html,
     body {
       font-family: poppins-extralight, poppins, sans-serif;
@@ -24,14 +35,14 @@
 <body>
   <!-- NavBar -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <!-- Container wrapper -->
       <div class="container">
         <!-- Logo -->
         <a class="navbar-brand" href="#">
           <img
             src="https://storage.googleapis.com/edbrixschool/app/public/uploads/organization/75/organization_organization_indopaklogo.png"
-            height="55" alt="" loading="lazy" />
+            height="65" alt="" loading="lazy" />
         </a>
         <!-- Toggle button -->
         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
@@ -56,13 +67,13 @@
 
             <!-- Navbar dropdown -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+              <a class="nav-link dropdown-toggle" href="cafe" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
                 aria-expanded="false">
                 Cafe
               </a>
               <!-- Dropdown menu -->
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Plano</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('cafe', location='plano') }}">Plano</a></li>
                 <li><a class="dropdown-item" href="#">Richardson</a></li>
                 <li><a class="dropdown-item" href="#">Arlington</a></li>
                 <li><a class="dropdown-item" href="#">Lewisville</a></li>
@@ -92,6 +103,9 @@
       <!-- Container wrapper -->
 
     </nav>
+
+    <div style="margin-top:75px"></div>
+
     {% block masthead %}
     {% endblock %}
   </header>
@@ -100,6 +114,8 @@
   {% endblock %}
 
 </body>
+
+
 <!-- JS CDN -->
 <!-- MDB -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.js"></script>

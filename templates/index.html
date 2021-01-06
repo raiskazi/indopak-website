@@ -8,23 +8,17 @@
     width: 100%;
     /* The width is the width of the web page */
   }
-
-  #intro-example {
-    height: 400px;
-  }
-
-  /* Height for devices larger than 992px */
-  @media (min-width: 992px) {
-    #intro-example {
-      height: 600px;
-    }
-  }
 </style>
 
-
 {% endblock %}
+
+
+
 {% block masthead %}
-<div id="intro-example" class="p-5 text-center bg-image"
+
+<section id="top"></section>
+
+<div id="intro-example" class="p-5 text-center bg-image "
   style="background-image: url('https://mdbootstrap.com/img/new/slides/041.jpg')">
   <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
     <div class="d-flex justify-content-center align-items-center h-100">
@@ -39,28 +33,33 @@
     </div>
   </div>
 </div>
+
 {% endblock %}
+
+
+
+
+
 
 {% block content %}
 
 <div class="container">
-
-  <section id="top">
     <br>
     <br>
     <h1 style="color:rgb(225, 0, 0); text-align:center">Our Mission</h1>
     <br>
-    <p style="font-size:20px; text-align:center">Welcome to Indopak Supermarket! From the beginning, it has been our
+    <p style="font-size:20px; text-align:center"> Welcome to Indopak Supermarket! From the beginning, it has been our
       mission to provide quality goods and produce to the the Asian community of DFW. The love and support we have
       recieved from all over has allowed us to create many more stores and offer many more services. Today we have six
       supermarkets in six cities in the Dallas-Fort Worth Metroplex. We have cafes, butchershops, and a beautiful
       banquet hall. We deeply appreciate all of your support and hope you enjoy! </p>
-  </section>
+    
+  
 
 
-  <section id="location">
-    <br>
-    <br>
+
+
+  <section id="location"></section>
     <br>
     <h1 style="color:rgb(225, 0, 0); text-align:center">Locations</h1>
     <br>
@@ -179,6 +178,9 @@
       }
     </script>
 
+
+
+
     <div class="row">
       <div class="col-6">
         <h1> <i>Plano</i> </h1>
@@ -279,7 +281,7 @@
     <br>
     <br>
     <br>
-  </section>
+  
 
   <section id="faq">
     <h1 style="color:rgb(225, 0, 0); text-align:center">FAQ</h1>
