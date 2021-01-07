@@ -31,6 +31,6 @@ def about():
 @app.route('/cafe/')
 @app.route('/cafe/<location>')
 def cafe(location=None):
-    if location is None or (location != "plano" and location != "richardson" and location != "arlington" and location != "lewisville" and location != "carrollton"):
+    if location is None or (location != "plano" and location != "richardson" and location != "arlington" and location != "lewisville" and location != "carrollton" and location != "murphy"):
         return render_template("cafe/cafe.html")
     return render_template("cafe/" + location + ".html")
