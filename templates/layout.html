@@ -77,7 +77,7 @@
                 <li><a class="dropdown-item" href="{{ url_for('cafe', location='plano') }}">Plano</a></li>
                 <li><a class="dropdown-item" href="{{ url_for('cafe', location='richardson') }}">Richardson</a></li>
                 <li><a class="dropdown-item" href="{{ url_for('cafe', location='arlington') }}">Arlington</a></li>
-                <li><a class="dropdown-item" href="{{ url_for('cafe', location='lewsiville') }}">Lewisville</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('cafe', location='lewisville') }}">Lewisville</a></li>
                 <li><a class="dropdown-item" href="{{ url_for('cafe', location='carrollton') }}">Carrollton</a></li>
                 <li><a class="dropdown-item" href="{{ url_for('cafe', location='murphy') }}">Murphy</a></li>
               </ul>
@@ -113,7 +113,8 @@
 
   {% block content %}
   {% endblock %}
-  <footer class="bg-light text-center text-lg-start">
+  <hr>
+  <footer class="bg-light text-center text-lg-start ">
     <div class="text-center p-4" style="background-color: rgb(255, 255, 255)">
       <h5 style="color: rgba(0,0,0, 1); font-weight: 200"> © {{now.year}}
         Indopak Supermarket</h5>
