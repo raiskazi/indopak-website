@@ -8,13 +8,14 @@
     width: 100%;
     /* The width is the width of the web page */
   }
-  #colorstrip {
-  width: 100%; height: 350px;
-  border-style: solid;
-  border-color: rgb(210, 0, 0);
-  background-color: rgb(210, 0, 0);
-}
 
+  #colorstrip {
+    width: 100%;
+    height: 500px;
+    border-style: solid;
+    border-color: rgb(196, 30, 30);
+    background-color: rgb(196, 30, 30);
+  }
 </style>
 
 
@@ -53,273 +54,277 @@
 {% block content %}
 
 <div class="container">
-    <br>
-    <br>
-    <h1 style="color:rgb(210, 0, 0); text-align:center">Our Mission</h1>
-    <br>
-    <p style="font-size:20px; text-align:center"> Welcome to Indopak Supermarket! From the beginning, it has been our
-      mission to provide quality goods and produce to the the Asian community of DFW. The love and support we have
-      recieved from all over has allowed us to create many more stores and offer many more services. Today we have six
-      supermarkets in six cities in the Dallas-Fort Worth Metroplex. We have cafes, butchershops, and a beautiful
-      banquet hall. We deeply appreciate all of your support and hope you enjoy! </p>
-    <br>
-</div>   
+  <br>
+  <br>
+  <h1 style="color:rgb(196, 30, 30); text-align:center">Our Mission</h1>
+  <br>
+  <p style="font-size:20px; text-align:center"> Welcome to Indopak Supermarket! From the beginning, it has been our
+    mission to provide quality goods and produce to the the Asian community of DFW. The love and support we have
+    recieved from all over has allowed us to create many more stores and offer many more services. Today we have six
+    supermarkets in six cities in the Dallas-Fort Worth Metroplex. We have cafes, butchershops, and a beautiful
+    banquet hall. We deeply appreciate all of your support and hope you enjoy! </p>
+  <br>
+</div>
 
 
-  <div id="colorstrip"/>
-    <div class = "row" >
-      <div class = "col-4"> <img src="{{url_for('static', filename='images/produce.jpg')}}" class="img-fluid shadow-5-strong"/> </div>
-      <div class = "col-4"> <img src="{{url_for('static', filename='images/outside.jpg')}}" class="img-fluid shadow-5-strong"/> </div>
-      <div class = "col-4"> <img src="{{url_for('static', filename='images/outside.jpg')}}" class="img-fluid shadow-5-strong"/></div> </div>
-    </div>
-  </div>
+<div id="colorstrip" />
+<div class="row">
+  <div class="col-4"> <img src="{{url_for('static', filename='images/produce.jpg')}}"
+      class="img-fluid shadow-5-strong" /> </div>
+  <div class="col-4"> <img src="{{url_for('static', filename='images/outside.jpg')}}"
+      class="img-fluid shadow-5-strong" /> </div>
+  <div class="col-4"> <img src="{{url_for('static', filename='images/outside.jpg')}}"
+      class="img-fluid shadow-5-strong" /></div>
+</div>
+</div>
+</div>
 
 
 
 <div class="container">
   <section id="location"></section>
-    <br>
-    <h1 style="color:rgb(210, 0, 0); text-align:center">Locations</h1>
-    <br>
-
-
-    
-
-
-
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-k9-SjNOqvY_GhDQvSOk_bPQEoOMWDAQ&callback=initMap&libraries=&v=weekly"
-      defer>
-    </script>
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of Plano
-        const plano = {
-          lat: 33.05760705427325,
-          lng: -96.73213424412899
-        };
-        // The map, centered at Plano
-        const map1 = new google.maps.Map(document.getElementById("map1"), {
-          zoom: 18,
-          center: plano,
-        });
-        // The marker, positioned at Plano
-        const marker1 = new google.maps.Marker({
-          position: plano,
-          map: map1,
-        });
-
-
-
-        // The location of Richardson
-        const richardson = {
-          lat: 32.94788595966537,
-          lng: -96.72925184045685
-        };
-        // The map, centered at Richardson
-        const map2 = new google.maps.Map(document.getElementById("map2"), {
-          zoom: 18,
-          center: richardson,
-        });
-        // The marker, positioned at Richardson
-        const marker2 = new google.maps.Marker({
-          position: richardson,
-          map: map2,
-        });
-
-
-
-        // The location of Arlington
-        const arlington = {
-          lat: 32.65851369899025,
-          lng: -97.11733735764683
-        };
-        // The map, centered at Arlington
-        const map3 = new google.maps.Map(document.getElementById("map3"), {
-          zoom: 18,
-          center: arlington,
-        });
-        // The marker, positioned at Arlington
-        const marker3 = new google.maps.Marker({
-          position: arlington,
-          map: map3,
-        });
-
-
-
-        // The location of Lewisville
-        const lewisville = {
-          lat: 33.004400701694635,
-          lng: -96.99746651531052
-        };
-        // The map, centered at Lewisville
-        const map4 = new google.maps.Map(document.getElementById("map4"), {
-          zoom: 18,
-          center: lewisville,
-        });
-        // The marker, positioned at Lewisville
-        const marker4 = new google.maps.Marker({
-          position: lewisville,
-          map: map4,
-        });
-
-
-
-        // The location of Carrollton
-        const carrollton = {
-          lat: 32.98198937989808,
-          lng: -96.91943367284061
-        };
-        // The map, centered at Carrollton
-        const map5 = new google.maps.Map(document.getElementById("map5"), {
-          zoom: 18,
-          center: carrollton,
-        });
-        // The marker, positioned at Carrollton
-        const marker5 = new google.maps.Marker({
-          position: carrollton,
-          map: map5,
-        });
-
-
-
-        // The location of Murphy
-        const murphy = {
-          lat: 33.01037652217639,
-          lng: -96.62288278818497
-        };
-        // The map, centered at Murphy
-        const map6 = new google.maps.Map(document.getElementById("map6"), {
-          zoom: 18,
-          center: murphy,
-        });
-        // The marker, positioned at Murphy
-        const marker6 = new google.maps.Marker({
-          position: murphy,
-          map: map6,
-        });
-      }
-    </script>
+  <br>
+  <h1 style="color:rgb(196, 30, 30); text-align:center">Locations</h1>
+  <br>
 
 
 
 
-<!-- CARD  -->
 
-<div class="row row-cols-1 row-cols-md-2">
-  <div class="col">
-    <div class="card">
-      <div id="map1" class="map"></div>
-      <div class="card-body">
-        <p class="card-text">
-          <h1> <i>Plano</i> </h1>
-          <a href=972-517-7031">(972) 517-7031</a>
-          <br>
-          <br>
-          <p>2060 W Spring Creek Pkwy #4285, Plano, TX 75023</p>
-          <p style="color:green; font-size:25px"> <b>Open</b></p>
-          <p> <b>Monday through Sunday</b> </p>
-          <p> 10AM - 10PM </p>
-        </p>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-k9-SjNOqvY_GhDQvSOk_bPQEoOMWDAQ&callback=initMap&libraries=&v=weekly"
+    defer>
+  </script>
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Plano
+      const plano = {
+        lat: 33.05760705427325,
+        lng: -96.73213424412899
+      };
+      // The map, centered at Plano
+      const map1 = new google.maps.Map(document.getElementById("map1"), {
+        zoom: 18,
+        center: plano,
+      });
+      // The marker, positioned at Plano
+      const marker1 = new google.maps.Marker({
+        position: plano,
+        map: map1,
+      });
+
+
+
+      // The location of Richardson
+      const richardson = {
+        lat: 32.94788595966537,
+        lng: -96.72925184045685
+      };
+      // The map, centered at Richardson
+      const map2 = new google.maps.Map(document.getElementById("map2"), {
+        zoom: 18,
+        center: richardson,
+      });
+      // The marker, positioned at Richardson
+      const marker2 = new google.maps.Marker({
+        position: richardson,
+        map: map2,
+      });
+
+
+
+      // The location of Arlington
+      const arlington = {
+        lat: 32.65851369899025,
+        lng: -97.11733735764683
+      };
+      // The map, centered at Arlington
+      const map3 = new google.maps.Map(document.getElementById("map3"), {
+        zoom: 18,
+        center: arlington,
+      });
+      // The marker, positioned at Arlington
+      const marker3 = new google.maps.Marker({
+        position: arlington,
+        map: map3,
+      });
+
+
+
+      // The location of Lewisville
+      const lewisville = {
+        lat: 33.004400701694635,
+        lng: -96.99746651531052
+      };
+      // The map, centered at Lewisville
+      const map4 = new google.maps.Map(document.getElementById("map4"), {
+        zoom: 18,
+        center: lewisville,
+      });
+      // The marker, positioned at Lewisville
+      const marker4 = new google.maps.Marker({
+        position: lewisville,
+        map: map4,
+      });
+
+
+
+      // The location of Carrollton
+      const carrollton = {
+        lat: 32.98198937989808,
+        lng: -96.91943367284061
+      };
+      // The map, centered at Carrollton
+      const map5 = new google.maps.Map(document.getElementById("map5"), {
+        zoom: 18,
+        center: carrollton,
+      });
+      // The marker, positioned at Carrollton
+      const marker5 = new google.maps.Marker({
+        position: carrollton,
+        map: map5,
+      });
+
+
+
+      // The location of Murphy
+      const murphy = {
+        lat: 33.01037652217639,
+        lng: -96.62288278818497
+      };
+      // The map, centered at Murphy
+      const map6 = new google.maps.Map(document.getElementById("map6"), {
+        zoom: 18,
+        center: murphy,
+      });
+      // The marker, positioned at Murphy
+      const marker6 = new google.maps.Marker({
+        position: murphy,
+        map: map6,
+      });
+    }
+  </script>
+
+
+
+
+  <!-- CARD  -->
+
+  <div class="row row-cols-1 row-cols-md-2">
+    <div class="col">
+      <div class="card">
+        <div id="map1" class="map"></div>
+        <div class="card-body">
+          <p class="card-text">
+            <h1> <i>Plano</i> </h1>
+            <a href="tel:972-517-7031">(972) 517-7031</a>
+            <br>
+            <br>
+            <p>2060 W Spring Creek Pkwy #4285, Plano, TX 75023</p>
+            <p style="color:green; font-size:25px"> <b>Open</b></p>
+            <p> <b>Monday through Sunday</b> </p>
+            <p> 10AM - 10PM </p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div id="map2" class="map"></div>
+        <div class="card-body">
+          <p class="card-text">
+            <h1> <i>Richardson</i> </h1>
+            <a href="tel:972-644-7900">(972) 644-7900</a>
+            <br><br>
+            <p>323 E Polk St, Richardson, TX 75081</p>
+            <p style="color:green; font-size:25px"> <b>Open</b></p>
+            <p> <b>Sunday through Thursday </b> 9AM - 9:30PM</p>
+            <p> <b>Friday & Saturday</b> 9AM - 10PM</p>
+          </p>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col">
-    <div class="card">
-      <div id="map2" class="map"></div>
-      <div class="card-body">
-        <p class="card-text">
-          <h1> <i>Richardson</i> </h1>
-          <a href="972-644-7900">(972) 644-7900</a>
-          <br><br>
-          <p>323 E Polk St, Richardson, TX 75081</p>
-          <p style="color:green; font-size:25px"> <b>Open</b></p>
-          <p> <b>Sunday through Thursday </b>  9AM - 9:30PM</p>
-          <p> <b>Friday & Saturday</b>  9AM - 10PM</p>
-        </p>
+
+  <br>
+
+  <div class="row row-cols-1 row-cols-md-2">
+    <div class="col">
+      <div class="card">
+        <div id="map3" class="map"></div>
+        <div class="card-body">
+          <p class="card-text">
+            <h1> <i>Arlington</i> </h1>
+            <a href="tel:817-466-2016">(817) 466-2016</a>
+            <br>
+            <br>
+            <p>808 SW Green Oaks Blvd, Arlington, TX 76017</p>
+            <p style="color:green; font-size:25px"> <b>Open</b></p>
+            <p><b>Monday through Sunday</b> </p>
+            <p>9AM - 10PM</p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div id="map4" class="map"></div>
+        <div class="card-body">
+          <p class="card-text">
+            <h1> <i>Lewisville</i> </h1>
+            <a href="tel:972-906-2980">(972) 906-2980</a>
+            <br>
+            <br>
+            <p>297 W Round Grove Rd, Lewisville, TX 75067</p>
+            <p style="color:green; font-size:25px"> <b>Open</b></p>
+            <p> <b>Monday through Sunday</b> </p>
+            <p>10AM - 9:30PM</p>
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<br>
+  <br>
 
-<div class="row row-cols-1 row-cols-md-2">
-  <div class="col">
-    <div class="card">
-      <div id="map3" class="map"></div>
-      <div class="card-body">
-        <p class="card-text">
-          <h1> <i>Arlington</i> </h1>
-          <a href="tel:817-466-2016">(817) 466-2016</a>
-          <br>
-          <br>
-          <p>808 SW Green Oaks Blvd, Arlington, TX 76017</p>    
-          <p style="color:green; font-size:25px"> <b>Open</b></p>
-          <p><b>Monday through Sunday</b> </p>
-          <p>9AM - 10PM</p>
-        </p>
+  <div class="row row-cols-1 row-cols-md-2">
+    <div class="col">
+      <div class="card">
+        <div id="map5" class="map"></div>
+        <div class="card-body">
+          <p class="card-text">
+            <h1> <i>Carrollton</i> </h1>
+            <a href="tel:972-323-2002">(972) 323-2002</a>
+            <br> <br>
+            <p>112, 1454, 2548 Dickerson Pkwy, Carrollton, TX 75006</p>
+            <p style="color:green; font-size:25px"> <b>Open</b></p>
+            <p> <b>Monday through Sunday</b> </p>
+            <p>10AM - 10PM</p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div id="map6" class="map"></div>
+        <div class="card-body">
+          <p class="card-text">
+            <h1> <i>Murphy</i> </h1>
+            <p>TBD</p>
+            <p>416 Village Dr, Murphy, TX 75094</p>
+            <p style="color:green; font-size:25px"> <b>Open</b></p>
+            <p>TBD</p>
+          </p>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col">
-    <div class="card">
-      <div id="map4" class="map"></div>
-      <div class="card-body">
-        <p class="card-text">
-          <h1> <i>Lewisville</i> </h1>
-          <a href="tel:972-906-2980">(972) 906-2980</a>
-          <br>
-          <br>
-          <p>297 W Round Grove Rd, Lewisville, TX 75067</p>
-          <p style="color:green; font-size:25px"> <b>Open</b></p>
-          <p> <b>Monday through Sunday</b> </p>
-          <p>10AM - 9:30PM</p>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<br>
-
-<div class="row row-cols-1 row-cols-md-2">
-  <div class="col">
-    <div class="card">
-      <div id="map5" class="map"></div>
-      <div class="card-body">
-        <p class="card-text">
-          <h1> <i>Carrollton</i> </h1>
-          <a href="tel:972-323-2002">(972) 323-2002</a>
-          <br> <br>
-          <p>112, 1454, 2548 Dickerson Pkwy, Carrollton, TX 75006</p>
-          <p style="color:green; font-size:25px"> <b>Open</b></p>
-          <p> <b>Monday through Sunday</b> </p>
-          <p>10AM - 10PM</p>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <div id="map6" class="map"></div>
-      <div class="card-body">
-        <p class="card-text">
-          <h1> <i>Murphy</i> </h1>
-          <p>TBD</p>
-          <p>416 Village Dr, Murphy, TX 75094</p>
-          <p style="color:green; font-size:25px"> <b>Open</b></p>
-          <p>TBD</p>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
-<!-- 
+  <!-- 
     <div class="row">
       <div class="col-6">
         <h1> <i>Plano</i> </h1>
@@ -417,85 +422,120 @@
       </div>
     </div> -->
 
-    <br>
-    <br>
-    <br>
+  <br>
+  <br>
+  <br>
 
-  </div>
+</div>
 
 
-  <div id="colorstrip"/>
-    <div class = "row" >
-      <!-- <div class = "col-4"> <img src="{{url_for('static', filename='images/produce.jpg')}}" class="img-fluid shadow-5-strong"/> </div>
+<div id="colorstrip" />
+<div class="row">
+  <!-- <div class = "col-4"> <img src="{{url_for('static', filename='images/produce.jpg')}}" class="img-fluid shadow-5-strong"/> </div>
       <div class = "col-4"> <img src="{{url_for('static', filename='images/outside.jpg')}}" class="img-fluid shadow-5-strong"/> </div>
       <div class = "col-4"> <img src="{{url_for('static', filename='images/outside.jpg')}}" class="img-fluid shadow-5-strong"/></div> -->
-      
-    <div class="col-4">
-      <a href="{{url_for('cafe')}}">
-      <div class="bg-image"> 
-        <img
-          src="{{url_for('static', filename='images/produce.jpg')}}" class="img-fluid shadow-5-strong"
-        />
+
+  <div class="col-4">
+    <a href="{{url_for('cafe')}}">
+      <div class="bg-image">
+        <img src="{{url_for('static', filename='images/produce.jpg')}}" class="img-fluid shadow-5-strong" />
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
           <div class="d-flex justify-content-center align-items-center h-100">
             <p class="text-white mb-0">Cafe</p>
           </div>
         </div>
       </div>
-      </a>
-    </div>
+    </a>
+  </div>
 
-    <div class="col-4">
-      <a href="{{url_for('butcher')}}">
-      <div class="bg-image"> 
-        <img
-          src="{{url_for('static', filename='images/produce.jpg')}}" class="img-fluid shadow-5-strong"
-        />
+  <div class="col-4">
+    <a href="{{url_for('butcher')}}">
+      <div class="bg-image">
+        <img src="{{url_for('static', filename='images/produce.jpg')}}" class="img-fluid shadow-5-strong" />
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
           <div class="d-flex justify-content-center align-items-center h-100">
             <p class="text-white mb-0">Butcher</p>
           </div>
         </div>
       </div>
-      </a>
-    </div>
+    </a>
+  </div>
 
-    <div class="col-4">
-      <a href="{{url_for('banquet')}}">
-      <div class="bg-image"> 
-        <img
-          src="{{url_for('static', filename='images/outside.jpg')}}" class="img-fluid shadow-5-strong"
-        />
+  <div class="col-4">
+    <a href="{{url_for('banquet')}}">
+      <div class="bg-image">
+        <img src="{{url_for('static', filename='images/outside.jpg')}}" class="img-fluid shadow-5-strong" />
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
           <div class="d-flex justify-content-center align-items-center h-100">
             <p class="text-white mb-0">Banquet Hall</p>
           </div>
         </div>
       </div>
-      </a>
-    </div>
-
-    
-    </div>
+    </a>
   </div>
 
 
-<div class="container">
-  <br>
+</div>
+</div>
+
+
+<div class="container mt-5 mb-5">
+  <h1 style="color:rgb(196, 30, 30); text-align:center">FAQ</h1>
   <section id="faq">
-    <h1 style="color:rgb(210, 0, 0); text-align:center">FAQ</h1>
-    <br>
-    <p style="font-size: 30px">Is it halal? </p>
-    <p style="font-size: 23px">Yes </p>
-    <br>
-    <p style="font-size: 30px">Can I use EBT? </p>
-    <p style="font-size: 23px">Yes </p>
-    <br>
-    <p style="font-size: 30px">What precautions are you taking for Covid-19?</p>
-    <p style="font-size: 23px">We require customers to wear masks in the store. We also offer curbside pickup..... </p>
-    <br>
-    <p style="font-size: 30px">Is it halal? </p>
-    <p style="font-size: 23px">Yes </p>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+            data-mdb-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Is it
+            halal?</button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-mdb-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Yes! Everything from the meat on the shelves to the cafe is Zabiha Halal.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+            data-mdb-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Can I use EBT?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-mdb-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Yes!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+            data-mdb-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">What
+            precautions are you taking for COVID-19?</button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          data-mdb-parent="#accordionFlushExample">
+          <div class="accordion-body">We require all our customer to wear masks in the store. We also offer curbside
+            pickup...</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+            data-mdb-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">Is it
+            halal?</button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+          data-mdb-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Yes! Everything from the meat on the shelves to the cafe is Zabiha Halal.
+          </div>
+        </div>
+      </div>
+    </div>
     <br>
   </section>
 </div>
