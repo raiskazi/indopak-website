@@ -25,7 +25,6 @@
       'Helvetica Neue', sans-serif */
         poppins-extralight, poppins, sans-serif;
       font-weight: 100;
-      background-color: #f6f6f6;
       max-width: 100%;
       overflow-x: hidden;
     }
@@ -57,18 +56,18 @@
         <div class="collapse navbar-collapse" id="navbarRightAlignExample">
           <!-- Left links -->
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+            <li class="nav-item mx-1">
               <a class="nav-link" aria-current="page" href="{{url_for('home', _anchor='top') }}">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-1">
               <a class="nav-link" href="{{url_for('home', _anchor='location') }}">Locations</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-1">
               <a class="nav-link" href="{{url_for('home', _anchor='faq') }}">FAQ</a>
             </li>
 
             <!-- Navbar dropdown -->
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown mx-1">
               <a class="nav-link dropdown-toggle" href="cafe" id="navbarDropdown" role="button"
                 data-mdb-toggle="dropdown" aria-expanded="false">
                 Cafe
@@ -76,24 +75,24 @@
               <!-- Dropdown menu -->
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="{{ url_for('cafe', location='plano') }}">Plano</a></li>
-                <li><a class="dropdown-item" href="#">Richardson</a></li>
-                <li><a class="dropdown-item" href="#">Arlington</a></li>
-                <li><a class="dropdown-item" href="#">Lewisville</a></li>
-                <li><a class="dropdown-item" href="#">Carrollton</a></li>
-                <li><a class="dropdown-item" href="#">Murphy</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('cafe', location='richardson') }}">Richardson</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('cafe', location='arlington') }}">Arlington</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('cafe', location='lewsiville') }}">Lewisville</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('cafe', location='carrollton') }}">Carrollton</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('cafe', location='murphy') }}">Murphy</a></li>
               </ul>
             </li>
 
             <!-- <li class="nav-item">
                 <a class="nav-link" href="{{url_for('cafe')}}">Cafe</a>
               </li> -->
-            <li class="nav-item">
+            <li class="nav-item mx-1">
               <a class="nav-link" href="{{url_for('butcher')}}">Butcher</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-1">
               <a class="nav-link" href="{{url_for('banquet')}}">Banquet Hall</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ml-1">
               <a class="nav-link" href="{{url_for('about')}}">About Us</a>
             </li>
           </ul>
@@ -115,9 +114,9 @@
   {% block content %}
   {% endblock %}
   <footer class="bg-light text-center text-lg-start">
-    <div class="text-center p-4" style="background-color: rgba(21, 166, 74)">
-      <h5 style="color: rgba(0,0,0, .55); font-weight: 200"> <i> © {{now.year}}
-          Indopak Supermarket</i></h5>
+    <div class="text-center p-4" style="background-color: rgb(255, 255, 255)">
+      <h5 style="color: rgba(0,0,0, 1); font-weight: 200"> © {{now.year}}
+        Indopak Supermarket</h5>
 
     </div>
   </footer>
