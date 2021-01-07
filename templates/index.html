@@ -1,5 +1,6 @@
 {% extends "layout.html" %}
 {% block css %}
+
 <style type="text/css">
   /* Set the size of the div element that contains the map */
   .map {
@@ -26,9 +27,9 @@
 
 {% block masthead %}
 
-<section id="top"></section>
 
-<div id="intro-example" class="p-5 text-center bg-image "
+
+<div id="intro-example" class="p-5 text-center bg-image"
   style="background-image: url('../static/images/mastheadpic.jpeg')">
   <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
     <div class="d-flex justify-content-center align-items-center h-100">
@@ -43,18 +44,12 @@
     </div>
   </div>
 </div>
-
 {% endblock %}
-
-
-
-
-
 
 {% block content %}
 
-<div class="container mt-5">
-  <h1 class="mb-2" style="color:rgb(196, 30, 30); text-align:center"><b>Our Mission</b></h1>
+<div class="container mt-5 py-4">
+  <h1 class="mb-3" style="color:rgb(196, 30, 30); text-align:center"><b>Our Mission</b></h1>
   <p style="font-size:20px; text-align:center"> Welcome to Indopak Supermarket! From the beginning, it has been our
     mission to provide quality goods and produce to the the Asian community of DFW. The love and support we have
     recieved from all over has allowed us to create many more stores and offer many more services. Today we have six
@@ -63,27 +58,26 @@
   <br>
 </div>
 
-
-<div class="row py-4 mt-4" style="background-color: rgb(196, 30, 30);">
-  <div class="col-md-4 my-3">
-    <div class="text-center mx-2"> <img src="{{url_for('static', filename='images/outside.jpg')}}"
-        class="img-fluid shadow-5-strong" /> </div>
-  </div>
-  <div class="col-md-4 my-3">
-    <div class="text-center mx-2"><img src="{{url_for('static', filename='images/outside.jpg')}}"
-        class="img-fluid shadow-5-strong" /> </div>
-  </div>
-  <div class="col-md-4 my-3">
-    <div class="text-center mx-2"> <img src="{{url_for('static', filename='images/outside.jpg')}}"
-        class="img-fluid shadow-5-strong" /></div>
+<div class="container-fluid">
+  <div class="row py-4 mt-4" style="background-color: rgb(196, 30, 30);">
+    <div class="col-md-4 my-3">
+      <div class="text-center"> <img src="{{url_for('static', filename='images/outside.jpg')}}"
+          class="img-fluid shadow-5-strong" /> </div>
+    </div>
+    <div class="col-md-4 my-3">
+      <div class="text-center"><img src="{{url_for('static', filename='images/outside.jpg')}}"
+          class="img-fluid shadow-5-strong" /> </div>
+    </div>
+    <div class="col-md-4 my-3">
+      <div class="text-center"> <img src="{{url_for('static', filename='images/outside.jpg')}}"
+          class="img-fluid shadow-5-strong" /></div>
+    </div>
   </div>
 </div>
 
-
-
-<div class="container mt-5">
-  <section id="location">
-    <h1 style="color:rgb(196, 30, 30); text-align:center" class="mb-1"><b>Locations</b></h1>
+<section id="location">
+  <div class="container mt-5 py-4">
+    <h1 style="color:rgb(196, 30, 30); text-align:center" class="mb-3"><b>Locations</b></h1>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-k9-SjNOqvY_GhDQvSOk_bPQEoOMWDAQ&callback=initMap&libraries=&v=weekly"
       defer>
@@ -221,7 +215,6 @@
       </div>
     </div>
 
-
     <div class="row row-cols-1 row-cols-md-2">
       <div class="col my-3">
         <div class="card h-100">
@@ -259,7 +252,6 @@
       </div>
     </div>
 
-
     <div class="row row-cols-1 row-cols-md-2">
       <div class="col my-3">
         <div class="card h-100">
@@ -292,55 +284,55 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<div class="container-fluid">
+  <div class="row py-4 mt-5 mb-2" style="background-color: rgb(196, 30, 30);">
+    <div class="col-md-4 my-3">
+      <div class="bg-image text-center mx-3">
+        <img src="{{url_for('static', filename='images/outside.jpg')}}" class="img-fluid shadow-5-strong w-100" />
+        <a href="{{url_for('cafe')}}">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <p class="text-white mb-0">Cafe</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-4 my-3">
+      <div class="bg-image text-center mx-3">
+        <img src="{{url_for('static', filename='images/outside.jpg')}}" class="img-fluid shadow-5-strong w-100" />
+        <a href="{{url_for('butcher')}}">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <p class="text-white mb-0">Butcher</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-4 my-3">
+      <div class="bg-image text-center mx-3">
+        <img src="{{url_for('static', filename='images/outside.jpg')}}" class="img-fluid shadow-5-strong w-100" />
+        <a href="{{url_for('banquet')}}">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <p class="text-white mb-0">Banquet Hall</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 
-
-<div class="row py-4 mt-5 mb-2" style="background-color: rgb(196, 30, 30);">
-  <div class="col-md-4 my-3">
-    <div class="bg-image text-center mx-4">
-      <img src="{{url_for('static', filename='images/outside.jpg')}}" class="img-fluid shadow-5-strong w-100" />
-      <a href="{{url_for('cafe')}}">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
-          <div class="d-flex justify-content-center align-items-center h-100">
-            <p class="text-white mb-0">Cafe</p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div class="col-md-4 my-3">
-    <div class="bg-image text-center mx-4">
-      <img src="{{url_for('static', filename='images/outside.jpg')}}" class="img-fluid shadow-5-strong w-100" />
-      <a href="{{url_for('butcher')}}">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
-          <div class="d-flex justify-content-center align-items-center h-100">
-            <p class="text-white mb-0">Butcher</p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div class="col-md-4 my-3">
-    <div class="bg-image text-center mx-4">
-      <img src="{{url_for('static', filename='images/outside.jpg')}}" class="img-fluid shadow-5-strong w-100" />
-      <a href="{{url_for('banquet')}}">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
-          <div class="d-flex justify-content-center align-items-center h-100">
-            <p class="text-white mb-0">Banquet Hall</p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-
-
-<div class="container mt-5 mb-5">
-  <h1 style="color:rgb(196, 30, 30); text-align:center"><b>FAQ</b></h1>
-  <section id="faq">
+<section id="faq">
+  <div class="container mt-5 mb-5 py-4">
+    <h1 style="color:rgb(196, 30, 30); text-align:center"><b>FAQ</b></h1>
     <div class="accordion accordion-flush" id="accordionFlushExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingOne">
@@ -396,8 +388,9 @@
       </div>
     </div>
     <br>
-  </section>
-</div>
+
+  </div>
+</section>
 
 
 {% endblock %}
