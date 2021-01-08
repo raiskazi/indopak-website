@@ -1,5 +1,24 @@
 {% extends "layout.html" %}
 
+{% block css %}
+
+<style>
+    html, body {
+        background-color: black;
+        color: #e0e0e0;
+    }
+
+    .cafefont{
+        /* font-family:'Xanh Mono'; */
+        font-family:'Fjalla One';
+    }
+
+</style>
+
+{% endblock %}
+
+
+
 {% block masthead %}
 
 <section id="top"></section>
@@ -24,7 +43,7 @@
 
 {% block content %}
 
-<div class="container">
+<div class="container cafefont">
     <br>
     <h1 style="color:rgb(196, 30, 30); text-align:center">Popular Items</h1>
     <br>
@@ -137,6 +156,12 @@
         <div class="col-3" style="font-size:20px">
             <p> <b> $4.99</b></p>
         </div>
+        <div class="col-3" style="font-size:20px">
+            <p> <b> Iftar Box </b></p>
+        </div>
+        <div class="col-3" style="font-size:20px">
+            <p> <b> $5.99</b></p>
+        </div>
     </div>
 
     <div class="row">
@@ -196,15 +221,6 @@
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $2.49</b></p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b> Iftar Box </b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b> $5.99</b></p>
         </div>
     </div>
 
