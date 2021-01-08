@@ -1,11 +1,17 @@
 {% extends "layout.html" %}
-
+{% block css %}
+<style>
+    html,
+    body {
+        background-color: black
+    }
+</style>
+{% endblock%}
 {% block masthead %}
 
 <section id="top"></section>
 
-<div id="intro-example" class="p-5 text-center bg-image "
-    style="background-image: url('../static/images/cafe.jpeg')">
+<div id="intro-example" class="p-5 text-center bg-image " style="background-image: url('../static/images/cafe.jpeg')">
     <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
         <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white">
@@ -34,7 +40,7 @@
 
     <div class="row">
         <div class="col-4" style="font-size:20px">
-            <p> <b>  Chicken Tikka Masala Curry</b></p>
+            <p> <b> Chicken Tikka Masala Curry</b></p>
         </div>
         <div class="col-4" style="font-size:20px">
             <p> <b> $11.99</b></p>
@@ -49,7 +55,7 @@
             <p> <b> IMAGE HERE</b></p>
         </div>
         <div class="col-4" style="font-size:20px">
-            <p> <b>  Mango Lassi</b></p>
+            <p> <b> Mango Lassi</b></p>
         </div>
         <div class="col-4" style="font-size:20px">
             <p> <b> $2.99</b></p>
@@ -75,13 +81,13 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Aloo Chat</b></p>
+            <p> <b> Aloo Chat</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $4.99</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Beef Samosa</b></p>
+            <p> <b> Beef Samosa</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $1.99</b></p>
@@ -90,13 +96,13 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Bhel Puri</b></p>
+            <p> <b> Bhel Puri</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $2.49</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Chicken Lollipop</b></p>
+            <p> <b> Chicken Lollipop</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $0.99</b></p>
@@ -105,7 +111,7 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  5-Piece Chicken Nugget</b></p>
+            <p> <b> 5-Piece Chicken Nugget</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $2.99</b></p>
@@ -120,13 +126,13 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Chicken Samosa</b></p>
+            <p> <b> Chicken Samosa</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $1.49</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
-            <p> <b>  3-Piece Chicken Wings</b></p>
+            <p> <b> 3-Piece Chicken Wings</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $2.99</b></p>
@@ -135,13 +141,13 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  4-Piece Cocktail Samosa</b></p>
+            <p> <b> 4-Piece Cocktail Samosa</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $1.49</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Daal Puri</b></p>
+            <p> <b> Daal Puri</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $1.49</b></p>
@@ -150,13 +156,13 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Fries</b></p>
+            <p> <b> Fries</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $2.49</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Mughlai Paratha</b></p>
+            <p> <b> Mughlai Paratha</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $8.99</b></p>
@@ -201,7 +207,7 @@
             <p> <b> $1.49</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Beef Kolija(liver) Samosa</b></p>
+            <p> <b> Beef Kolija(liver) Samosa</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $2.50</b></p>
@@ -210,13 +216,13 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Vegetable Roll</b></p>
+            <p> <b> Vegetable Roll</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $3.49</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Chicken Roll</b></p>
+            <p> <b> Chicken Roll</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $3.49</b></p>
@@ -231,13 +237,13 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Bun Kabab Combo</b></p>
+            <p> <b> Bun Kabab Combo</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $9.99</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Bun Kabob</b></p>
+            <p> <b> Bun Kabob</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $7.99</b></p>
@@ -246,13 +252,13 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Chicken Boti Roll</b></p>
+            <p> <b> Chicken Boti Roll</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $6.99</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Gyro Beef Roll</b></p>
+            <p> <b> Gyro Beef Roll</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $8.99</b></p>
@@ -261,7 +267,7 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Kabab Roll</b></p>
+            <p> <b> Kabab Roll</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $6.99</b></p>
@@ -276,13 +282,13 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Beef Sheek Kabab</b></p>
+            <p> <b> Beef Sheek Kabab</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $11.99</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Chicken Sheek Kabab</b></p>
+            <p> <b> Chicken Sheek Kabab</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $9.99</b></p>
@@ -291,7 +297,7 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Breast Chicken Tandoori</b></p>
+            <p> <b> Breast Chicken Tandoori</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $4.99</b></p>
@@ -306,13 +312,13 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  6-Piece Boneless Chicken Boti</b></p>
+            <p> <b> 6-Piece Boneless Chicken Boti</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $9.99</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Grill Combo</b></p>
+            <p> <b> Grill Combo</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $9.99</b></p>
@@ -321,7 +327,7 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Whole Grill Chicken</b></p>
+            <p> <b> Whole Grill Chicken</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $12.99</b></p>
@@ -340,13 +346,13 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Achar Chicken Curry</b></p>
+            <p> <b> Achar Chicken Curry</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $9.99</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Beef Rejala Curry</b></p>
+            <p> <b> Beef Rejala Curry</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $11.99</b></p>
@@ -355,13 +361,13 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Bihari Kabab Curry</b></p>
+            <p> <b> Bihari Kabab Curry</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $16.99</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Butter Chicken Curry</b></p>
+            <p> <b> Butter Chicken Curry</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $11.99</b></p>
@@ -370,7 +376,7 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Chicken 65 Curry</b></p>
+            <p> <b> Chicken 65 Curry</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $9.99</b></p>
@@ -385,13 +391,13 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Chicken Karai Curry</b></p>
+            <p> <b> Chicken Karai Curry</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $9.99</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Chicken Korma Curry</b></p>
+            <p> <b> Chicken Korma Curry</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $9.99</b></p>
@@ -406,7 +412,7 @@
             <p> <b> $9.99</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Chicken Tikka Curry</b></p>
+            <p> <b> Chicken Tikka Curry</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $9.99</b></p>
@@ -415,7 +421,7 @@
 
     <div class="row">
         <div class="col-3" style="font-size:20px">
-            <p> <b>  Chicken Tikka Masala Curry</b></p>
+            <p> <b> Chicken Tikka Masala Curry</b></p>
         </div>
         <div class="col-3" style="font-size:20px">
             <p> <b> $11.99</b></p>
