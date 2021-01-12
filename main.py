@@ -36,4 +36,5 @@ def cafe(location=None):
         return render_template("cafe/cafe.html")
     with open('cafe.json') as f:
         data = json.load(f)
+    print(data[location])
     return render_template("cafe/" + location + ".html", data=data[location])

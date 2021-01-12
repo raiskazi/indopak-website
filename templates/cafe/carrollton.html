@@ -43,339 +43,39 @@
 {% block content %}
 
 <div class="container cafefont">
+    {% for type in data%}
     <br>
-    <h1 style="color:rgb(196, 30, 30); text-align:center">Specials</h1>
+    <h1 style="color:rgb(196, 30, 30); text-align:center">{{type['Type']}}</h1>
     <br>
-
+    {% for item in type['Items'] %}
     <div class="row">
-        <div class="col-4" style="font-size:20px">
-            <p><b>Thursdays - Goat Yakhny Pulao</b></p>
+        <div class="col-md-5">
+            <div class="row">
+                <div class="col-8" style="font-size:20px">
+                    <p> <b> {{item['name']}}</b></p>
+                </div>
+                <div class="col-4" style="font-size:20px">
+                    <div class="d-flex justify-content-end">
+                        <p> <b> ${{item['price']}}</b></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-4" style="font-size:20px">
-            <p> <b> $6.99</b></p>
-        </div>
-        <div class="col-4" style="font-size:20px">
-            <p> <b> IMAGE HERE</b></p>
-        </div>
+        <!-- <div class="col-md-5 offset-md-2">
+            <div class="row">
+                <div class="col-8" style="font-size:20px">
+                    <p> <b></b></p>
+                </div>
+                <div class="col-4" style="font-size:20px">
+                    <div class="d-flex justify-content-end">
+                        <p> <b></b></p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
     </div>
-
-    <div class="row">
-        <div class="col-4" style="font-size:20px">
-            <p> <b> IMAGE HERE</b></p>
-        </div>
-        <div class="col-4" style="font-size:20px">
-            <p> <b>Tuesdas & Wednesdays - Morog Pulao</b></p>
-        </div>
-        <div class="col-4" style="font-size:20px">
-            <p> <b> $5.99</b></p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-4" style="font-size:20px">
-            <p> <b>Fridays, Saturdays, and Sundays - Beef Bhuna Gosht</b></p>
-        </div>
-        <div class="col-4" style="font-size:20px">
-            <p> <b> $6.99</b></p>
-        </div>
-        <div class="col-4" style="font-size:20px">
-            <p> <b> IMAGE HERE</b></p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-4" style="font-size:20px">
-            <p> <b> IMAGE HERE</b></p>
-        </div>
-        <div class="col-4" style="font-size:20px">
-            <p> <b>Fridays, Saturdays, and Sundays - Beef Bihari Kabab</b></p>
-        </div>
-        <div class="col-4" style="font-size:20px">
-            <p> <b> $6.99</b></p>
-        </div>
-
-    </div>
-
-    <div class="row">
-        <div class="col-4" style="font-size:20px">
-            <p> <b>Fridays, Saturdays, and Sundays - Chicken Korma</b></p>
-        </div>
-        <div class="col-4" style="font-size:20px">
-            <p> <b>$5.99</b></p>
-        </div>
-        <div class="col-4" style="font-size:20px">
-            <p> <b> IMAGE HERE</b></p>
-        </div>
-    </div>
-
-    <br>
-    <h1 style="color:rgb(196, 30, 30); text-align:center">Party Orders</h1>
-    <br>
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Bhuna Dal (Medium Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$25.00</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Veg Curry (Medium Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$25.00</b></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Chicken Korma (Medium Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$50.00</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Chicken Karachi (Medium Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$50.00</b></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Beef Curry (Medium Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$60.00</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Veg Biryani (Medium Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$25.00</b></p>
-        </div>
-
-    </div>
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b> Chicken Biryani(Medium Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$40.00</b></p>
-        </div>
-
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Chicken Biryani (Big Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$65.00</b></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Veg Biryani (Big Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$45.00</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Goat Kurma (Big Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$120.00</b></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Beef Biryani (Big Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$80.00</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Beef Biryani (Medium Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$50.00</b></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Goat Biryani (Medium Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$120.00</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Goat Karahi (Medium Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$120.00</b></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Beef Curry (Big Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$90.00</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Chicken Karahi (Big Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$70.00</b></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Chicken Korma (Big Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$70.00</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Veg Curry (Big Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$40.00</b></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Bhuna Dal (Big Tray)</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>$40.00</b></p>
-        </div>
-    </div>
-
-    <br>
-    <h1 style="color:rgb(196, 30, 30); text-align:center">Snacks</h1>
-    <br>
-
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Chicken Patis</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b></b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Beef Patis</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b></b></p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Veg Patis</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b></b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Egg Patis</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b></b></p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Samara Chat</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b></b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Papdi Chat</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b></b></p>
-        </div>
-    </div>
-
-
-    <br>
-    <h1 style="color:rgb(196, 30, 30); text-align:center">Biryani</h1>
-    <br>
-
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Goat Biryani</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b></b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Beef Biryani</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b></b></p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Fish Biryani</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b></b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Egg Biryani</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b></b></p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Veg Biryani</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b> </b></p>
-        </div>
-    </div>
-
-
-
-    <br>
-    <h1 style="color:rgb(196, 30, 30); text-align:center">Vegetable Dishes</h1>
-    <br>
-
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Mix Vegetables</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b></b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Choley Bhutura</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b></b></p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Bhidi Masala</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b></b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b>Bunna Dal</b></p>
-        </div>
-        <div class="col-3" style="font-size:20px">
-            <p> <b></b></p>
-        </div>
-    </div>
+    {% endfor %}
+    {% endfor %}
 </div>
 
 

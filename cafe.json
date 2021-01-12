@@ -17,7 +17,7 @@
             "name": "5-Piece Chicken Nugget",
             "price": 2.99
         }, {
-            "name": "Chicken Pattie",
+            "name": "Chicken Patties",
             "price": 2.49
         }, {
             "name": "Chicken Samosa",
@@ -166,6 +166,288 @@
         }, {
             "name": "Chicken Karai-Boneless",
             "price": 12.99
+        }]
+    }, {
+        "Type": "Biryani",
+        "Items": [{
+            "name": "Beef Biryani",
+            "price": 11.99
+        }, {
+            "name": "Beef Pulao",
+            "price": 14.99
+        }, {
+            "name": "Chicken Biryani",
+            "price": 6.99
+        }, {
+            "name": "Chicken Biryani-Boneless",
+            "price": 9.99
+        }, {
+            "name": "Chicken Tikka Birayni",
+            "price": 9.99
+        }, {
+            "name": "Tilapia Fish Biryani",
+            "price": 12.99
+        }, {
+            "name": "Goat Birayni",
+            "price": 12.99
+        }, {
+            "name": "Goat Pulao",
+            "price": 13.99
+        }, {
+            "name": "Lamb Biryani-Boneless",
+            "price": 15.99
+        }, {
+            "name": "Murog Pulao",
+            "price": 9.99
+        }, {
+            "name": "Shrimp Biryani",
+            "price": 13.99
+        }, {
+            "name": "Vegetable Birayni",
+            "price": 6.99
+        }, {
+            "name": "Chicken Fried Rice",
+            "price": 9.99
+        }, {
+            "name": "Beef Fried Rice",
+            "price": 12.99
+        }, {
+            "name": "Murog Pulao-Boneless",
+            "price": 12.99
+        }]
+    }, {
+        "Type": "Vegetables",
+        "Items": [{
+            "name": "Aloo Bengon",
+            "price": 5.99
+        }, {
+            "name": "Aloo Mutter",
+            "price": 5.99
+        }, {
+            "name": "Bengon Bhajee",
+            "price": 5.99
+        }, {
+            "name": "Bhindo Bhajee",
+            "price": 5.99
+        }, {
+            "name": "Bhindi Daal",
+            "price": 5.99
+        }, {
+            "name": "Bhindi Masala",
+            "price": 5.99
+        }, {
+            "name": "Bhuna Daal",
+            "price": 5.99
+        }, {
+            "name": "Daal Spinach",
+            "price": 6.99
+        }, {
+            "name": "Mixed Vegetable Curry",
+            "price": 5.99
+        }, {
+            "name": "Paneer - (Chili or Muttor or Saag)",
+            "price": 8.99
+        }]
+    }, {
+        "Type": "Fish",
+        "Items": [{
+            "name": "Tilapia Fish Biryani",
+            "price": 12.99
+        }, {
+            "name": "Fish Combo",
+            "price": 11.99
+        }, {
+            "name": "Tilapia Fish Curry",
+            "price": 11.99
+        }, {
+            "name": "Fish Kabab",
+            "price": 2.99
+        }, {
+            "name": "Rohu Fish",
+            "price": 11.99
+        }, {
+            "name": "Shrimp Biryani",
+            "price": 13.99
+        }, {
+            "name": "Shrimp Curry",
+            "price": 13.99
+        }]
+    }, {
+        "Type": "Beverages",
+        "Items": [{
+            "name": "Hot Tea",
+            "price": 1.99
+        }, {
+            "name": "Mango Juice",
+            "price": 1.99
+        }, {
+            "name": "Mango Lassi",
+            "price": 2.99
+        }, {
+            "name": "Soda Can",
+            "price": 1.99
+        }, {
+            "name": "Sweet Lassi",
+            "price": 2.99
+        }, {
+            "name": "Water",
+            "price": 1.49
+        }]
+    }, {
+        "Type": "Sweets",
+        "Items": [{
+            "name": "8-Piece Laddu Box",
+            "price": 7.99
+        }, {
+            "name": "1-lb Jalebi Box",
+            "price": 7.99
+        }, {
+            "name": "8-Piece Gulab Jamun Box",
+            "price": 7.99
+        }]
+    }, {
+        "Type": "Sides",
+        "Items": [{
+            "name": "Butter Naan",
+            "price": 2.49
+        }, {
+            "name": "Plain Naan",
+            "price": 1.99
+        }, {
+            "name": "Paratha",
+            "price": 1.99
+        }, {
+            "name": "Pulao Rice",
+            "price": 2.99
+        }, {
+            "name": "Steam Rice",
+            "price": 2.49
+        }]
+    }, {
+        "Type": "Ramadan (Seasonal)",
+        "Items": [{
+            "name": "Iftar Box, Chana",
+            "price": 0.00
+        }]
+    }],
+    "carrollton": [{
+        "Type": "Specials",
+        "Items": [{
+            "name": "Thursdays - Goat Yakhny Pulao",
+            "price": 6.99
+        }, {
+            "name": "Tuesdays and Wednesdays - Murog Pulao",
+            "price": 5.99
+        }, {
+            "name": "Fridays, Saturdays, and Sundays - Beef Bhuna Gosht",
+            "price": 6.99
+        }, {
+            "name": "Fridays, Saturdays, and Sundays - Beef Bihari Kabab",
+            "price": 6.99
+        }, {
+            "name": "Fridays, Saturdays, and Sundays - Chicken Korma",
+            "price": 5.99
+        }]
+    }, {
+        "Type": "Party Orders",
+        "Items": [{
+            "name": "Bhuna Daal (Medium Tray)",
+            "price": 25.00
+        }, {
+            "name": "Bhuna Daal (Big Tray)",
+            "price": 40.00
+        }, {
+            "name": "Vegetable Curry (Medium Tray)",
+            "price": 25.00
+        }, {
+            "name": "Vegetable Curry (Big Tray)",
+            "price": 40.00
+        }, {
+            "name": "Chicken Korma (Medium Tray)",
+            "price": 50.00
+        }, {
+            "name": "Chicken Korma (Big Tray)",
+            "price": 70.00
+        }, {
+            "name": "Chicken Karahi (Medium Tray)",
+            "price": 50.00
+        }, {
+            "name": "Chicken Karahi (Big Tray)",
+            "price": 70.00
+        }, {
+            "name": "Goat Karahi (Big Tray)",
+            "price": 120.00
+        }, {
+            "name": "Beef Curry (Medium Tray)",
+            "price": 60.00
+        }, {
+            "name": "Beef Curry (Big Tray)",
+            "price": 90.00
+        }, {
+            "name": "Goat Korma (Big Tray)",
+            "price": 120.00
+        }, {
+            "name": "Beef Biryani (Medium Tray)",
+            "price": 50.00
+        }, {
+            "name": "Beef Biryani (Big Tray)",
+            "price": 80.00
+        }, {
+            "name": "Chicken Biryani (Medium Tray)",
+            "price": 40.00
+        }, {
+            "name": "Chicken Biryani (Big Tray)",
+            "price": 65.00
+        }, {
+            "name": "Goat Biryani (Big Tray)",
+            "price": 120.00
+        }, {
+            "name": "Vegetable Biryani (Medium Tray)",
+            "price": 25.00
+        }, {
+            "name": "Vegetable Biryani (Big Tray)",
+            "price": 45.00
+        }]
+    }, {
+        "Type": "Snacks",
+        "Items": [{
+            "name": "Chicken Patties"
+        }, {
+            "name": "Beef Patties"
+        }, {
+            "name": "Vegetable Patties"
+        }, {
+            "name": "Egg Patties"
+        }, {
+            "name": "Samara Chaat"
+        }, {
+            "name": "Papdi Chaat"
+        }]
+    }, {
+        "Type": "Biryani",
+        "Items": [{
+            "name": "Goat Biryani"
+        }, {
+            "name": "Beef Biryani"
+        }, {
+            "name": "Fish Biryani"
+        }, {
+            "name": "Egg Biryani"
+        }, {
+            "name": "Vegetable Biryani"
+        }]
+    }, {
+        "Type": "Vegetable",
+        "Items": [{
+            "name": "Mix Vegetables"
+        }, {
+            "name": "Bengon Bhajee"
+        }, {
+            "name": "Choley Bhutura"
+        }, {
+            "name": "Bhidi Masala"
+        }, {
+            "name": "Bhuna Daal"
         }]
     }]
 }
