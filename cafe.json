@@ -95,7 +95,7 @@
             "name": "Leg Chicken Tandoori",
             "price": 3.99
         }, {
-            "name": "6-Piece Bonless Chicken Boti",
+            "name": "6-Piece Boneless Chicken Boti",
             "price": 9.99
         }, {
             "name": "Grill Combo",
@@ -449,5 +449,384 @@
         }, {
             "name": "Bhuna Daal"
         }]
-    }]
+    }],
+    "lewisville": [{
+        "Type": "Snacks",
+        "Items": [{
+            "name": "Chicken Patties",
+            "price": 1.79
+        }, {
+            "name": "Beef Patties",
+            "price": 1.79
+        }, {
+            "name": "Vegetable Patties",
+            "price": 1.79
+        }, {
+            "name": "Egg Patties",
+            "price": 1.79
+        }, {
+            "name": "Naan",
+            "price": 1.49
+        }, {
+            "name": "Paratha",
+            "price": 4.95
+        }, {
+            "name": "Chicken Nuggets",
+            "price": 1.99
+        }, {
+            "name": "Samosa Chaat",
+            "price": 4.99
+        }, {
+            "name": "Papdi Chaat",
+            "price": 4.99
+        }, {
+            "name": "Vegetable Samosa",
+            "price": 0.99
+        }, {
+            "name": "Chicken Samosa",
+            "price": 0.99
+        }, {
+            "name": "Beef Samosa",
+            "price": 0.99
+        }, {
+            "name": "Pulao Rice",
+            "price": 1.79
+        }, {
+            "name": "Chicken Shawarma",
+            "price": 4.99
+        }, {
+            "name": "Beef Shawarma",
+            "price": 4.99
+        }, {
+            "name": "Daal Puri",
+            "price": 2.49
+        }, {
+            "name": "Aloo Puri",
+            "price": 2.49
+        }, {
+            "name": "Iftar Box",
+            "price": 5.99
+        }]
+    }, {
+        "Type": "Grill",
+        "Items": [{
+            "name": "Chicken Tandoori Leg",
+            "price": 3.99
+        }, {
+            "name": "Chicken Breast",
+            "price": 4.49
+        }, {
+            "name": "Chicken Boti",
+            "price": 6.99
+        }, {
+            "name": "Grill Chicken Boti",
+            "price": 6.99
+        }, {
+            "name": "Chicken Sheek Kabab",
+            "price": 6.99
+        }, {
+            "name": "Beef Sheek Kabab",
+            "price": 6.99
+        }, {
+            "name": "Grill Combo Kabab",
+            "price": 10.99
+        }]
+    }, {
+        "Type": "Vegetable Dishes",
+        "Items": [{
+            "name": "Bhuna Daal",
+            "price": 4.99
+        }, {
+            "name": "Mixed Vegetable",
+            "price": 4.99
+        }, {
+            "name": "Bhindi Masala",
+            "price": 5.99
+        }, {
+            "name": "Bengon Bhaji",
+            "price": 5.99
+        }, {
+            "name": "Chole Bhatura",
+            "price": 5.99
+        }]
+    }, {
+        "Type": "Curry",
+        "Items": [{
+            "name": "Chicken Tikka Masala",
+            "price": 8.99
+        }, {
+            "name": "Paneer Tikka Masala",
+            "price": 8.99
+        }, {
+            "name": "Haleem",
+            "price": 7.99
+        }, {
+            "name": "Goat Kadhai",
+            "price": 8.99
+        }, {
+            "name": "Goat Korma",
+            "price": 9.99
+        }, {
+            "name": "Chicken Kadhai",
+            "price": 6.99
+        }, {
+            "name": "Chicken Korma",
+            "price": 6.99
+        }, {
+            "name": "Beef Rejala",
+            "price": 7.99
+        }, {
+            "name": "Chili Chicken",
+            "price": 8.99
+        }, {
+            "name": "Daal Gosht",
+            "price": 9.99
+        }]
+    }, {
+        "Type": "Fish",
+        "Items": [{
+            "name": "Fish Fry Tilapia",
+            "price": 8.99
+        }, {
+            "name": "Fish Fry Basa",
+            "price": 8.99
+        }, {
+            "name": "Fish Masala",
+            "price": 9.99
+        }, {
+            "name": "Fish Combo",
+            "price": 10.99
+        }]
+    }, {
+        "Type": "Biryani",
+        "Items": [{
+            "name": "Goat Biryani",
+            "price": 9.99
+        }, {
+            "name": "Beef Biryani",
+            "price": 7.99
+        }, {
+            "name": "Fish Biryani",
+            "price": 9.99
+        }, {
+            "name": "Shrimp Biryani",
+            "price": 8.99
+        }, {
+            "name": "Egg Biryani",
+            "price": 5.99
+        }, {
+            "name": "Vegetable Biryani",
+            "price": 5.99
+        }]
+    }, {
+        "Type": "Our Daily Special",
+        "Items": [{
+            "name": "Chicken Biryani",
+            "price": 5.99
+        }, {
+            "name": "Boneless Chicken Biryani",
+            "price": 7.99
+        }, {
+            "name": "Chicken Boti Roll",
+            "price": 4.99
+        }, {
+            "name": "Chicken Sheek Kabab Roll",
+            "price": 4.99
+        }, {
+            "name": "Beef Sheek Kabab Roll",
+            "price": 4.99
+        }, {
+            "name": "Beef Sheek Kabab Roll",
+            "price": 4.99
+        }, {
+            "name": "Murog Pulao",
+            "price": 7.99
+        }]
+    }, {
+        "Type": "Beverages",
+        "Items": [{
+            "name": "Sweet Lassi",
+            "price": 2.99
+        }, {
+            "name": "Mango Lassi",
+            "price": 2.99
+        }, {
+            "name": "Mango Shake",
+            "price": 2.99
+        }, {
+            "name": "Banana Shake",
+            "price": 2.99
+        }]
+    }, {
+        "Type": "Desserts",
+        "Items": [{
+            "name": "Gulab Jamon",
+            "price": 2.99
+        }, {
+            "name": "Kheer",
+            "price": 2.99
+        }]
+    }],
+    "arlington": [{
+        "Type": "Snacks",
+        "Items": [{
+            "name": "Shami Kabab",
+            "price": 1.99
+        }, {
+            "name": "Chicken Wings",
+            "price": 7.99
+        }, {
+            "name": "Samosa",
+            "price": 1.29
+        }, {
+            "name": "Spring Roll",
+            "price": 1.29
+        }, {
+            "name": "Chicken Nuggets",
+            "price": 6.49
+        }]
+    }, {
+        "Type": "Biryani",
+        "Items": [{
+            "name": "Vegetable Biryani",
+            "price": 7.99
+        }, {
+            "name": "Chicken Biryani",
+            "price": 7.99
+        }, {
+            "name": "Goat Biryani",
+            "price": 10.99
+        }, {
+            "name": "Fish Biryani",
+            "price": 10.99
+        }, {
+            "name": "Shrimp Biryani",
+            "price": 12.99
+        }, {
+            "name": "Beef Biryani",
+            "price": 10.99
+        }, {
+            "name": "Lamb Biryani",
+            "price": 12.99
+        }]
+    }, {
+        "Type": "Curry",
+        "Items": [{
+            "name": "Goat Korma",
+            "price": 11.99
+        }, {
+            "name": "Goat Karahi",
+            "price": 11.99
+        }, {
+            "name": "Chicken Korma",
+            "price": 8.99
+        }, {
+            "name": "Chicken Karahi",
+            "price": 8.99
+        }, {
+            "name": "Beef Haleem",
+            "price": 10.99
+        }, {
+            "name": "Beef Nihari",
+            "price": 12.99
+        }, {
+            "name": "Butter Chicken",
+            "price": 12.99
+        }, {
+            "name": "Lamb Curry",
+            "price": 12.99
+        }]
+    }, {
+        "Type": "Grill",
+        "Items": [{
+            "name": "Chicken Boti Plate",
+            "price": 8.99
+        }, {
+            "name": "Sheek Kabab Plate",
+            "price": 7.99
+        }, {
+            "name": "Tandoori Chicken",
+            "price": 5.99
+        }, {
+            "name": "Combo Platter",
+            "price": 11.99
+        }]
+    }, {
+        "Type": "Vegetarian",
+        "Items": [{
+            "name": "Mixed Vegetable",
+            "price": 6.49
+        }, {
+            "name": "Begun Bhaji",
+            "price": 6.49
+        }, {
+            "name": "Bhindi Bhaji",
+            "price": 6.49
+        }, {
+            "name": "Bhuna Daal",
+            "price": 6.49
+        }, {
+            "name": "Paneer Matar",
+            "price": 10.99
+        }]
+    }, {
+        "Type": "Rolls",
+        "Items": [{
+            "name": "Chicken Boti Roll",
+            "price": 5.99
+        }, {
+            "name": "Fish Roll",
+            "price": 5.99
+        }, {
+            "name": "Beef Kabab Roll",
+            "price": 5.99
+        }, {
+            "name": "Chicken Kabab Roll",
+            "price": 5.99
+        }]
+    }, {
+        "Type": "Sides",
+        "Items": [{
+            "name": "Pulao Rice",
+            "price": 2.49
+        }, {
+            "name": "Garlic Naan",
+            "price": 1.99
+        }, {
+            "name": "Naan Bread",
+            "price": 1.49
+        }, {
+            "name": "Paratha",
+            "price": 1.29
+        }, {
+            "name": "French Fries",
+            "price": 2.49
+        }, {
+            "name": "Chai",
+            "price": 1.49
+        }, {
+            "name": "Mango Lassi",
+            "price": 3.79
+        }, {
+            "name": "Soft Drinl",
+            "price": 1.29
+        }]
+    }, {
+        "Type": "Our Daily Special",
+        "Items": [{
+            "name": "Chicken 65 Special",
+            "price": 11.99
+        }, {
+            "name": "Lahori Fish Fry Special",
+            "price": 8.99
+        }, {
+            "name": "Daal Gosht Special",
+            "price": 8.99
+        }, {
+            "name": "Chicken Tehari Special",
+            "price": 8.99
+        }]
+    }],
+    "richardson": {},
+    "murphy": {}
 }
