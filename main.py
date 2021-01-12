@@ -1,5 +1,6 @@
 from flask import Flask, render_template, url_for, request
 from datetime import datetime
+import json
 app = Flask(__name__)
 
 
@@ -33,4 +34,6 @@ def about():
 def cafe(location=None):
     if location is None or (location != "plano" and location != "richardson" and location != "arlington" and location != "lewisville" and location != "carrollton" and location != "murphy"):
         return render_template("cafe/cafe.html")
-    return render_template("cafe/" + location + ".html")
+    with open('cafe.json') as f:
+        data = json.load(f)
+    return render_template("cafe/" + location + ".html", data=data[location])

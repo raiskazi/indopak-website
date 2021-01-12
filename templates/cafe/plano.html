@@ -38,9 +38,8 @@
 {% endblock %}
 
 
-
-
 {% block content %}
+
 
 <div class="container cafefont">
     <br>
@@ -89,33 +88,63 @@
     <h1 style="color:rgb(196, 30, 30); text-align:center">Snacks</h1>
     <br>
 
+    <!-- {% for dict_item in data.Snacks%}
+    {% for key, value in dict_item.items() %}
     <div class="row">
-        <div class="col-4" style="font-size:20px">
-            <p> <b> Aloo Chat</b></p>
+        <div class="col-md-5">
+            <div class="row">
+                <div class="col-8" style="font-size:20px">
+                    <p> <b> {{value}}</b></p>
+                </div>
+                <div class="col-4" style="font-size:20px">
+                    <div class="d-flex justify-content-end">
+                        <p> <b> ${{value}}</b></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-2" style="font-size:20px">
-            <p> <b> $4.99</b></p>
-        </div>
-        <div class="col-4" style="font-size:20px">
-            <p> <b> Beef Samosa</b></p>
-        </div>
-        <div class="col-2" style="font-size:20px">
-            <p> <b> $1.99</b></p>
+        <div class="col-md-5 offset-md-2">
+            <div class="row">
+                <div class="col-8" style="font-size:20px">
+                    <p> <b> Beef Samosa</b></p>
+                </div>
+                <div class="col-4" style="font-size:20px">
+                    <div class="d-flex justify-content-end">
+                        <p> <b> $1.99</b></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    {% endfor %}
+    {% endfor %} -->
 
     <div class="row">
-        <div class="col-4" style="font-size:20px">
-            <p> <b> Bhel Puri</b></p>
+        <div class="col-md-5">
+            <div class="row">
+                <div class="col-8" style="font-size:20px">
+                    <p> <b> Bhel Puri</b></p>
+                </div>
+
+                <div class="col-4" style="font-size:20px">
+                    <div class="d-flex justify-content-end">
+                        <p> <b> $2.49</b></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-2" style="font-size:20px">
-            <p> <b> $2.49</b></p>
-        </div>
-        <div class="col-4" style="font-size:20px">
-            <p> <b> Chicken Lollipop</b></p>
-        </div>
-        <div class="col-2" style="font-size:20px">
-            <p> <b> $0.99</b></p>
+        <div class="col-md-5 offset-md-2">
+            <div class="row">
+                <div class="col-8" style="font-size:20px">
+                    <p> <b> Chicken Lollipop</b></p>
+                </div>
+
+                <div class="col-4" style="font-size:20px">
+                    <div class="d-flex justify-content-end">
+                        <p> <b> $0.99</b></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
