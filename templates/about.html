@@ -1,6 +1,30 @@
 {% extends "layout.html" %}
+
 {% block content %}
-<div class="container">
-    <h1> This is about text</h1>
+<div class="container" style="padding: 20px">
+
+    <h1 class="mt-5"> Our Owners</h1>
+    
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <img src="{{url_for('static', filename='images/banquet.jpeg')}}" height = "150" width = "215">
+        </div>
+        <div class="col-md-9">
+            <h3> Shawkat Ali</h3>
+            <p> hey</p>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <img src="{{url_for('static', filename='images/banquet.jpeg')}}" height = "150" width = "215">
+        </div>
+        <div class="col-md-9">
+            <h3> Mohammad Farhad</h3>
+            <p> salam</p>
+        </div>
+    </div>
+
+
 </div>
 {% endblock %}
