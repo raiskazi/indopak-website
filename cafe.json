@@ -411,43 +411,59 @@
     }, {
         "Type": "Snacks",
         "Items": [{
-            "name": "Chicken Patties"
+            "name": "Chicken Patties",
+            "price": null
         }, {
-            "name": "Beef Patties"
+            "name": "Beef Patties",
+            "price": null
         }, {
-            "name": "Vegetable Patties"
+            "name": "Vegetable Patties",
+            "price": null
         }, {
-            "name": "Egg Patties"
+            "name": "Egg Patties",
+            "price": null
         }, {
-            "name": "Samara Chaat"
+            "name": "Samara Chaat",
+            "price": null
         }, {
-            "name": "Papdi Chaat"
+            "name": "Papdi Chaat",
+            "price": null
         }]
     }, {
         "Type": "Biryani",
         "Items": [{
-            "name": "Goat Biryani"
+            "name": "Goat Biryani",
+            "price": null
         }, {
-            "name": "Beef Biryani"
+            "name": "Beef Biryani",
+            "price": null
         }, {
-            "name": "Fish Biryani"
+            "name": "Fish Biryani",
+            "price": null
         }, {
-            "name": "Egg Biryani"
+            "name": "Egg Biryani",
+            "price": null
         }, {
-            "name": "Vegetable Biryani"
+            "name": "Vegetable Biryani",
+            "price": null
         }]
     }, {
         "Type": "Vegetable",
         "Items": [{
-            "name": "Mix Vegetables"
+            "name": "Mix Vegetables",
+            "price": null
         }, {
-            "name": "Bengon Bhajee"
+            "name": "Bengon Bhajee",
+            "price": null
         }, {
-            "name": "Choley Bhutura"
+            "name": "Choley Bhutura",
+            "price": null
         }, {
-            "name": "Bhidi Masala"
+            "name": "Bhidi Masala",
+            "price": null
         }, {
-            "name": "Bhuna Daal"
+            "name": "Bhuna Daal",
+            "price": null
         }]
     }],
     "lewisville": [{
@@ -619,7 +635,7 @@
             "price": 5.99
         }]
     }, {
-        "Type": "Our Daily Special",
+        "Type": "Daily Specials",
         "Items": [{
             "name": "Chicken Biryani",
             "price": 5.99

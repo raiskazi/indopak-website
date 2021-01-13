@@ -37,38 +37,44 @@
 
 {% block content %}
 
-<div class="container cafefont"> {% for type in data%}
+<div class="container cafefont">
+
+    {% for type in data%}
     <br>
     <h1 style="color:rgb(196, 30, 30); text-align:center">{{type['Type']}}</h1>
     <br>
-    {% for item in type['Items'] %}
+
     <div class="row">
+        {% for i in range(0,type['Items']|length) %}
+        {% if i%2 == 0 %}
         <div class="col-md-5">
             <div class="row">
                 <div class="col-8" style="font-size:20px">
-                    <p> <b> {{item['name']}}</b></p>
+                    <p> <b> {{type['Items'][i]['name']}}</b></p>
                 </div>
                 <div class="col-4" style="font-size:20px">
                     <div class="d-flex justify-content-end">
-                        <p> <b> ${{item['price']}}</b></p>
+                        <p> <b> {{format_price(type['Items'][i]['price'])}}</b></p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="col-md-5 offset-md-2">
+        {% else %}
+        <div class="col-md-5 offset-md-2">
             <div class="row">
                 <div class="col-8" style="font-size:20px">
-                    <p> <b></b></p>
+                    <p> <b>{{type['Items'][i]['name']}}</b></p>
                 </div>
                 <div class="col-4" style="font-size:20px">
                     <div class="d-flex justify-content-end">
-                        <p> <b></b></p>
+                        <p> <b>{{format_price(type['Items'][i]['price'])}}</b></p>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
+        {% endif %}
+        {% endfor %}
     </div>
-    {% endfor %}
     {% endfor %}
 </div>
 

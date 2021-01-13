@@ -6,8 +6,7 @@
 
 <section id="top"></section>
 
-<div id="intro-example" class="p-5 text-center bg-image "
-    style="background-image: url('../static/images/cafe.jpeg')">
+<div id="intro-example" class="p-5 text-center bg-image " style="background-image: url('../static/images/cafe.jpeg')">
     <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
         <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white">
@@ -22,4 +21,48 @@
     </div>
 </div>
 
+{% endblock %}
+
+{% block content %}
+
+<div class="container cafefont">
+
+    {% for type in data%}
+    <br>
+    <h1 style="color:rgb(196, 30, 30); text-align:center">{{type['Type']}}</h1>
+    <br>
+
+    <div class="row">
+        {% for i in range(0,type['Items']|length) %}
+        {% if i%2 == 0 %}
+        <div class="col-md-5">
+            <div class="row">
+                <div class="col-8" style="font-size:20px">
+                    <p> <b> {{type['Items'][i]['name']}}</b></p>
+                </div>
+                <div class="col-4" style="font-size:20px">
+                    <div class="d-flex justify-content-end">
+                        <p> <b> {{format_price(type['Items'][i]['price'])}}</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="col-md-5 offset-md-2">
+            <div class="row">
+                <div class="col-8" style="font-size:20px">
+                    <p> <b>{{type['Items'][i]['name']}}</b></p>
+                </div>
+                <div class="col-4" style="font-size:20px">
+                    <div class="d-flex justify-content-end">
+                        <p> <b>{{format_price(type['Items'][i]['price'])}}</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}

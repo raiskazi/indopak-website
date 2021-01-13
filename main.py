@@ -9,6 +9,15 @@ def inject_now():
     return {'now': datetime.utcnow()}
 
 
+@app.context_processor
+def utility_processor():
+    def format_price(amount, currency=u'$'):
+        if amount is None:
+            return 'Price not available'
+        return u'{1}{0:.2f}'.format(amount, currency)
+    return dict(format_price=format_price)
+
+
 @app.route("/")
 def home():
     return render_template('index.html')
@@ -36,5 +45,4 @@ def cafe(location=None):
         return render_template("cafe/cafe.html")
     with open('cafe.json') as f:
         data = json.load(f)
-    print(data[location])
     return render_template("cafe/" + location + ".html", data=data[location])
