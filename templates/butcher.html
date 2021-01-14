@@ -1,13 +1,12 @@
 {% extends "layout.html" %}
-
+{% set active_page = "butcher" %}
 
 
 {% block masthead %}
 
 <section id="top"></section>
 
-<div id="intro-example" class="p-5 text-center bg-image "
-  style="background-image: url('../static/images/butcher.png')">
+<div id="intro-example" class="p-5 text-center bg-image " style="background-image: url('../static/images/butcher.png')">
   <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
     <div class="d-flex justify-content-center align-items-center h-100">
       <div class="text-white">
@@ -28,7 +27,7 @@
 {% block content %}
 
 <div class="container mt-5 py-4">
-  <h1 class="mb-2" style="color:rgb(196, 30, 30); text-align:center"> <b> Butchers </b> </h1>  
+  <h1 class="mb-2" style="color:rgb(196, 30, 30); text-align:center"> <b> Butchers </b> </h1>
   <br>
   <div class="row row-cols-1 row-cols-md-2">
     <div class="col my-3">
@@ -47,7 +46,7 @@
           </p>
         </div>
       </div>
-    </div>      
+    </div>
     <div class="col my-3">
       <div class="card h-100">
         <div id="map2" class="map"></div>
@@ -106,5 +105,5 @@
 
 </div>
 
-</div>  
+</div>
 {% endblock %}
