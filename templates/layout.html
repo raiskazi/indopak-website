@@ -7,7 +7,13 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
   <link rel="stylesheet" href="../static/css/mdb.min.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Hind&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Hind&family=Hind:wght@700&display=swap"
+    rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Hind:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../static/js/scroll.js"></script>
   <style>
     #intro-example {
       height: 400px;
@@ -59,12 +65,13 @@
         <!-- Collapsible wrapper -->
         <div class="collapse navbar-collapse" id="navbarRightAlignExample">
           <!-- Left links -->
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 scrollspy">
             <li class="nav-item mx-1">
-              <a class="nav-link" aria-current="page" href="{{url_for('home', _anchor='top') }}">Home</a>
+              <a class="nav-link {% if id == 'home' %} active {% endif %}" aria-current="page"
+                href="{{url_for('home', _anchor='home') }}">Home</a>
             </li>
             <li class="nav-item mx-1">
-              <a class="nav-link" href="{{url_for('home', _anchor='location') }}">Locations</a>
+              <a class="nav-link" href="{{url_for('home', _anchor='locations') }}">Locations</a>
             </li>
             <li class="nav-item mx-1">
               <a class="nav-link" href="{{url_for('home', _anchor='faq') }}">FAQ</a>
@@ -124,6 +131,7 @@
 </body>
 
 <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+
 {% block js %}
 {% endblock %}
 
