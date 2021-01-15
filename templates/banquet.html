@@ -1,5 +1,19 @@
 {% extends "layout.html" %}
 {% set active_page = "banquet" %}
+
+{% block css %}
+
+  <style type="text/css">
+    .carou {
+      width: 90%;
+      height: 90%;
+    }
+  </style>
+
+{% endblock %}
+
+
+
 {% block masthead %}
 
 <section id="top"></section>
@@ -43,6 +57,69 @@
 
 
 
+<div id="carouselExampleIndicators" class="carousel slide" data-mdb-ride="carousel">
+  <ol class="carousel-indicators">
+    <li
+      data-mdb-target="#carouselExampleIndicators"
+      data-mdb-slide-to="0"
+      class="active"
+    ></li>
+    <li data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="1"></li>
+    <li data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img
+        src="{{url_for('static', filename='images/banquet1.jpeg')}}"
+        class="d-block w-100 carou"
+        alt="..."
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{{url_for('static', filename='images/banquet2.jpeg')}}"
+        class="d-block w-100 carou"
+        alt="..."
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{{url_for('static', filename='images/banquet3.jpeg')}}"
+        class="d-block w-100 carou"
+        alt="..."
+      />
+    </div>
+  </div>
+  <a
+    class="carousel-control-prev"
+    href="#carouselExampleIndicators"
+    role="button"
+    data-mdb-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a
+    class="carousel-control-next"
+    href="#carouselExampleIndicators"
+    role="button"
+    data-mdb-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- 
+
 
 <div class="row py-1 mt-4" style="background-color: rgb(196, 30, 30);">
   <div class="col-md-4 my-3">
@@ -87,7 +164,7 @@
     <div class="text-center mx-2"> <img src="{{url_for('static', filename='images/outside.jpg')}}"
         class="img-fluid shadow-5-strong" /></div>
   </div>
-</div>
+</div> -->
 
 
 {% endblock %}
