@@ -4,7 +4,7 @@ var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
     window['safari'].pushNotification));
 if (isSafari) {
     $(function () {
-        $('.nav-link .mast-head').click(function () {
+        $('.nav-link').click(function () {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname ==
                 this
                     .hostname) {

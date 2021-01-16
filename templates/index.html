@@ -16,14 +16,6 @@
     width: 90%;
   }
 
-  #colorstrip {
-    width: 100%;
-    height: 500px;
-    border-style: solid;
-    border-color: rgb(196, 30, 30);
-    background-color: rgb(196, 30, 30);
-  }
-
   #locations {
     padding-top: 90px;
     margin-top: -90px;
@@ -35,11 +27,7 @@
   }
 </style>
 
-
-
 {% endblock %}
-
-
 
 {% block masthead %}
 
@@ -52,8 +40,8 @@
         <div class="text-white">
           <h1 class="mb-3" style="font-size: 350%"><b> Indopak Supermarket</b></h1>
           <h5 class="mb-4" style="font-size: 350%"><b> Welcome!</b></h5>
-          <a class="btn btn-outline-light btn-lg m-2" href="{{url_for('home', _anchor='locations') }}" role="button"
-            rel="nofollow" style="min-width:150px">Locations</a>
+          <a class="mast-location btn btn-outline-light btn-lg m-2" href="{{url_for('home', _anchor='locations') }}"
+            style="min-width:150px">Locations</a>
           <a class="btn btn-outline-light btn-lg m-2" href="{{url_for('cafe')}}" role="button"
             style="min-width:150px">Cafe</a>
         </div>
@@ -421,6 +409,27 @@
 
 {% block js %}
 <script>
-
+  var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
+    return p.toString() === "[object SafariRemoteNotification]";
+  })(!window['safari'] || (typeof safari !== 'undefined' &&
+    window['safari'].pushNotification));
+  if (isSafari) {
+    $(function () {
+      $('.mast-location').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname ==
+          this
+          .hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000); // The number here represents the speed of the scroll in milliseconds
+            return false;
+          }
+        }
+      });
+    });
+  }
 </script>
 {% endblock %}
