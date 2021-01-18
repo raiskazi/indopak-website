@@ -34,6 +34,10 @@
       overflow-x: hidden;
     }
 
+    .active {
+      color: green !important;
+    }
+
     .cafefont {
       font-family: 'Fjalla One', sans-serif;
     }
@@ -66,7 +70,14 @@
           <!-- Left links -->
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 scrollspy">
             <li class="nav-item mx-1">
-              <a class="nav-link {% if id == 'home' %} active {% endif %}" aria-current="page"
+              <a 
+                {% if active_page == 'home' %} 
+                class="nav-link active" 
+                {% else %}
+                class="nav-link" 
+                {% endif %} 
+
+                aria-current="page"
                 href="{{url_for('home', _anchor='home') }}">Home</a>
             </li>
             <li class="nav-item mx-1">
@@ -78,7 +89,13 @@
 
             <!-- Navbar dropdown -->
             <li class="nav-item dropdown mx-1">
-              <a class="nav-link dropdown-toggle" href="cafe" id="navbarDropdown" role="button"
+              <a 
+                {% if active_page == 'cafe' %} 
+                class="nav-link dropdown-toggle active" 
+                {% else %}
+                class="nav-link dropdown-toggle" 
+                {% endif %} 
+                href="cafe" id="navbarDropdown" role="button"
                 data-mdb-toggle="dropdown" aria-expanded="false">
                 Cafe
               </a>
@@ -94,13 +111,31 @@
             </li>
 
             <li class="nav-item mx-1">
-              <a class="nav-link" href="{{url_for('butcher')}}">Butcher</a>
+              <a
+              {% if active_page == 'butcher' %} 
+                class="nav-link active" 
+                {% else %}
+                class="nav-link" 
+                {% endif %}  
+               href="{{url_for('butcher')}}">Butcher</a>
             </li>
             <li class="nav-item mx-1">
-              <a class="nav-link" href="{{url_for('banquet')}}">Banquet Hall</a>
+              <a 
+              {% if active_page == 'banquet' %} 
+                class="nav-link active" 
+                {% else %}
+                class="nav-link" 
+                {% endif %}  
+              href="{{url_for('banquet')}}">Banquet Hall</a>
             </li>
             <li class="nav-item ml-1">
-              <a class="nav-link" href="{{url_for('about')}}">About Us</a>
+              <a 
+              {% if active_page == 'about' %} 
+              class="nav-link active" 
+              {% else %}
+              class="nav-link" 
+              {% endif %}   
+              href="{{url_for('about')}}">About Us</a>
             </li>
           </ul>
           <!-- Left links -->
