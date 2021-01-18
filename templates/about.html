@@ -3,34 +3,37 @@
 {% block content %}
 <div class="container" style="padding: 20px">
 
-    <h1 class="mt-5"> Our Owners</h1>
+    <h1 class="mt-5" style="color: rgb(196, 30, 30)"> <b>Our Owners</b> </h1>
 
     <div class="row mt-5">
         <div class="col-md-3">
-            <img src="{{url_for('static', filename='images/banquet.jpeg')}}" height="150" width="215" class="img-fluid">
+            <img src="{{url_for('static', filename='images/farhad.jpg')}}" height="275" width="275" class="img-fluid">
         </div>
         <div class="col-md-9">
-            <h3> Mohammad Farhad</h3>
-            <p> salam</p>
+            <h2> Mohammad Farhad</h2>
+            <p style= "font-size: large"> Mohammad Farhad is a founder of Indopak Supermarket and India Import. He wanted to serve his community by
+                offering affordable groceries along with a taste of home. After over two decades, this is still
+                his goal. Indopak has grown tremendously and now has multiple supermarkets, butchers, cafes and a banquet hall.
+                Mohammad Farhad is married with two children. 
+            </p>
         </div>
     </div>
 
     <div class="row mt-5">
         <div class="col-md-3">
-            <img src="{{url_for('static', filename='images/banquet.jpeg')}}" height="150" width="215" class="img-fluid">
+            <img src="{{url_for('static', filename='images/shawkat.jpg')}}" height="275" width="275" class="img-fluid">
         </div>
         <div class="col-md-9">
-            <h3> Shawkat Ali</h3>
-            <p> MD Shawkat Ali is a founder of Indopak Supermarket and India Import. Shawkat Ali came to the US as a
-                student when he was 18 years old.
-                He realised that the Asian grocery business had great potential in the DFW area. Since then, six
-                supermarkets have been created in six cities
-                throughout the Dallas-Forth Worth metroplex. MD Shawkat Ali is married and has two wonderful children.
+            <h2> MD Shawkat Ali</h2>
+            <p style= "font-size: large"> MD Shawkat Ali is a founder of Indopak Supermarket and India Import. Shawkat Ali came to the US as a
+                student when he was 18 years old. He realised that the Asian grocery business had great potential in 
+                the DFW area. Since then, six supermarkets have been created in six cities throughout the Dallas-Forth 
+                Worth metroplex. MD Shawkat Ali is married and has two wonderful children.
             </p>
         </div>
     </div>
 
 
-    <div style="margin-bottom: 18%;"></div>
+    <!-- <div style="margin-bottom: 18%;"></div> -->
 </div>
 {% endblock %}
