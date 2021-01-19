@@ -28,8 +28,8 @@
                 <a class="btn btn-outline-light btn-lg m-2" href="tel:877-585-1085" role="button" rel="nofollow"
                     style="min-width:180px">(877) 585-1085</a>
                 <a class="btn btn-outline-light btn-lg m-2"
-                href="https://www.ubereats.com/dallas/food-delivery/indopak-cafe-lewisville/-Zk_cTUKR96aHFIll6p0gg"
-                role="button" target="_blank" style="min-width:180px">Order on UberEats</a>
+                    href="https://www.ubereats.com/dallas/food-delivery/indopak-cafe-lewisville/-Zk_cTUKR96aHFIll6p0gg"
+                    role="button" target="_blank" style="min-width:180px">Order on UberEats</a>
             </div>
         </div>
     </div>
@@ -77,6 +77,9 @@
         {% endif %}
         {% endfor %}
     </div>
+    {% if not loop.last %}
+    <hr>
+    {% endif %}
     {% endfor %}
 </div>
 

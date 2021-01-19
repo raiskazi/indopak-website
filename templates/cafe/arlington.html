@@ -28,11 +28,11 @@
                 <a class="btn btn-outline-light btn-lg m-2" href="tel:817-466-2014" role="button" rel="nofollow"
                     style="min-width:180px">(817) 466-2014</a>
                 <a class="btn btn-outline-light btn-lg m-2"
-                href="https://www.doordash.com/store/indopak-world-market-arlington-854272/en-US"
-                role="button" target="_blank" style="min-width:180px">Order on DoorDash</a>
+                    href="https://www.doordash.com/store/indopak-world-market-arlington-854272/en-US" role="button"
+                    target="_blank" style="min-width:180px">Order on DoorDash</a>
                 <a class="btn btn-outline-light btn-lg m-2"
-                href="https://www.grubhub.com/restaurant/indo-pak-world-market-808-sw-green-oaks-blvd-arlington/2333537"
-                role="button" target="_blank" style="min-width:180px">Order on Grubhub</a>
+                    href="https://www.grubhub.com/restaurant/indo-pak-world-market-808-sw-green-oaks-blvd-arlington/2333537"
+                    role="button" target="_blank" style="min-width:180px">Order on Grubhub</a>
             </div>
         </div>
     </div>
@@ -82,6 +82,9 @@
         {% endif %}
         {% endfor %}
     </div>
+    {% if not loop.last %}
+    <hr>
+    {% endif %}
     {% endfor %}
 </div>
 {% endblock %}

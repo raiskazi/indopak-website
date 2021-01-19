@@ -62,6 +62,9 @@
         {% endif %}
         {% endfor %}
     </div>
+    {% if not loop.last %}
+    <hr>
+    {% endif %}
     {% endfor %}
 </div>
 {% endblock %}
