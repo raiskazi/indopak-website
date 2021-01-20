@@ -31,7 +31,7 @@
 
 {% block masthead %}
 
-<section id="home">
+<section id="home" class="section">
   <div id="intro-example" class="p-5 text-center bg-image"
     style="background-image: url('../static/images/masthead.webp')">
     <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
@@ -80,7 +80,7 @@
   </div>
 </div>
 
-<section id="locations">
+<section id="locations" class="section">
   <div class="container mt-4 py-4">
     <h1 style="color:rgb(196, 30, 30); text-align:center" class="mb-4 animate__animated animate__fadeInUp">
       <b>Locations</b>
@@ -338,8 +338,7 @@
     </div>
   </div>
 </div>
-
-<section id="faq">
+<section id="faq" class="section">
   <div class="container mt-5 mb-5 py-4">
     <h1 style="color:rgb(196, 30, 30); text-align:center"><b>FAQ</b></h1>
     <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -394,6 +393,7 @@
 {% endblock %}
 
 {% block js %}
+<script src="../static/js/mobile.js"></script>
 <script>
   var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
     return p.toString() === "[object SafariRemoteNotification]";

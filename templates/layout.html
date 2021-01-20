@@ -32,6 +32,7 @@
       font-weight: 100;
       max-width: 100%;
       overflow-x: hidden;
+      position: relative;
     }
 
     .active {
@@ -56,7 +57,7 @@
   <title>Indopak</title>
 </head>
 
-<body>
+<body {% if active_page == 'home' %} data-spy="scroll" data-target=".navbar" data-offset="50" {% endif %}>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
@@ -72,13 +73,16 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item mx-1">
               <a {% if active_page == 'home' %} class="nav-link active" {% else %} class="nav-link" {% endif %}
-                href="{{url_for('home', _anchor='home') }}">Home</a>
+                {% if active_page == 'home' %} href="#home" {% else %} href="{{url_for('home', _anchor='home') }}"
+                {% endif %}>Home</a>
             </li>
             <li class="nav-item mx-1">
-              <a class="nav-link" href="{{url_for('home', _anchor='locations') }}">Locations</a>
+              <a class="nav-link" {% if active_page == 'home' %} href="#locations" {% else %}
+                href="{{url_for('home', _anchor='locations') }}" {% endif %}>Locations</a>
             </li>
             <li class="nav-item mx-1">
-              <a class="nav-link" href="{{url_for('home', _anchor='faq') }}">FAQ</a>
+              <a class="nav-link" {% if active_page == 'home' %} href="#faq" {% else %}
+                href="{{url_for('home', _anchor='faq') }}" {% endif %}>FAQ</a>
             </li>
             <li class="nav-item dropdown mx-1">
               <a {% if active_page == 'cafe' %} class="nav-link dropdown-toggle active" {% else %}
@@ -142,7 +146,33 @@
 
 <script type="text/javascript" src="../static/js/mdb.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="../static/js/scroll.js"></script>
+<script>
+  var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
+    return p.toString() === "[object SafariRemoteNotification]";
+  })(!window['safari'] || (typeof safari !== 'undefined' &&
+    window['safari'].pushNotification));
+  if (isSafari) {
+    $(function () {
+      $('.navbar-brand').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname ==
+          this
+          .hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000); // The number here represents the speed of the scroll in milliseconds
+            return false;
+          }
+        }
+      });
+    });
+  }
+</script>
 {% block js %}
 {% endblock %}
 
