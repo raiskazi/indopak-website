@@ -37,9 +37,9 @@
     <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
       <div class="d-flex justify-content-center align-items-center h-100">
         <div class="text-white">
-          <h1 class="mb-3 animate__animated animate__fadeInLeft" style="font-size: 350%"><b> Indopak Supermarket</b>
+          <h1 class="mb-3 animate__animated animate__fadeInLeft intro-text"><b> Indopak Supermarket</b>
           </h1>
-          <h5 class="mb-4 animate__animated animate__fadeInRight" style="font-size: 350%"><b> Welcome!</b></h5>
+          <h2 class="mb-4 animate__animated animate__fadeInRight sub-text"><b> Welcome!</b></h2>
           <a class="mast-location btn btn-outline-light btn-lg m-2" href="{{url_for('home', _anchor='locations') }}"
             style="min-width:150px">Locations</a>
           <a class="btn btn-outline-light btn-lg m-2" href="{{url_for('cafe')}}" role="button"
@@ -67,15 +67,15 @@
 <div class="container-fluid">
   <div class="row py-4 mt-4" style="background-color: rgb(196, 30, 30);">
     <div class="col-md-4 my-3">
-      <div class="text-center"> <img src="{{url_for('static', filename='images/pic1.png')}}"
+      <div class="text-center"> <img src="{{url_for('static', filename='images/pic2.jpg')}}"
           class="img-fluid shadow-5-strong strip" /> </div>
     </div>
     <div class="col-md-4 my-3">
-      <div class="text-center"><img src="{{url_for('static', filename='images/outside.jpg')}}"
+      <div class="text-center"><img src="{{url_for('static', filename='images/pic1.jpg')}}"
           class="img-fluid shadow-5-strong strip" /> </div>
     </div>
     <div class="col-md-4 my-3">
-      <div class="text-center"> <img src="{{url_for('static', filename='images/arlingtonuserpic.jpg')}}"
+      <div class="text-center"> <img src="{{url_for('static', filename='images/pic3.jpg')}}"
           class="img-fluid shadow-5-strong strip" /></div>
     </div>
   </div>
@@ -301,7 +301,7 @@
   <div class="row py-4 mt-5 mb-2" style="background-color: rgb(196, 30, 30);">
     <div class="col-md-4 my-3">
       <div class="bg-image text-center mx-3">
-        <img src="{{url_for('static', filename='images/outside.jpg')}}" class="img-fluid shadow-5-strong w-100" />
+        <img src="{{url_for('static', filename='images/banquetstrip.jpg')}}" class="img-fluid shadow-5-strong w-100" />
         <a href="{{url_for('cafe')}}">
           <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
             <div class="d-flex justify-content-center align-items-center h-100">
@@ -314,7 +314,7 @@
 
     <div class="col-md-4 my-3">
       <div class="bg-image text-center mx-3">
-        <img src="{{url_for('static', filename='images/outside.jpg')}}" class="img-fluid shadow-5-strong w-100" />
+        <img src="{{url_for('static', filename='images/butcher3.jpg')}}" class="img-fluid shadow-5-strong w-100" />
         <a href="{{url_for('butcher')}}">
           <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
             <div class="d-flex justify-content-center align-items-center h-100">
@@ -327,7 +327,7 @@
 
     <div class="col-md-4 my-3">
       <div class="bg-image text-center mx-3">
-        <img src="{{url_for('static', filename='images/outside.jpg')}}" class="img-fluid shadow-5-strong w-100" />
+        <img src="{{url_for('static', filename='images/banquetstrip.jpg')}}" class="img-fluid shadow-5-strong w-100" />
         <a href="{{url_for('banquet')}}">
           <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
             <div class="d-flex justify-content-center align-items-center h-100">
@@ -394,7 +394,6 @@
 {% endblock %}
 
 {% block js %}
-<script src="../static/js/mobile.js"></script>
 <script>
   var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
     return p.toString() === "[object SafariRemoteNotification]";

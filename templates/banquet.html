@@ -27,11 +27,12 @@
   <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
     <div class="d-flex justify-content-center align-items-center h-100">
       <div class="text-white">
-        <h1 class="mb-3 animate__animated animate__fadeInLeft" style="font-size: 350%"><b> Indopak Banquet Hall</b></h1>
-        <h5 class="mb-4 animate__animated animate__fadeInRight" style="font-size: 250%"><b>Celebrate with us!</b></h5>
+        <h1 class="mb-3 animate__animated animate__fadeInLeft intro-text"><b> Indopak Banquet Hall</b></h1>
+        <h5 class="mb-4 animate__animated animate__fadeInRight sub-text"><b>Celebrate with
+            us!</b></h5>
         <div class="d-flex justify-content-center">
-          <a class="nav-link mast-head btn btn-outline-light btn-lg m-2"
-            href="{{url_for('banquet', _anchor='gallery') }}" role="button" style="max-width: 150px;">View Gallery</a>
+          <a class="mast-gallery btn btn-outline-light btn-lg m-2" href="{{url_for('banquet', _anchor='gallery') }}"
+            role="button">View Gallery</a>
         </div>
       </div>
     </div>
@@ -124,4 +125,30 @@
 </section>
 
 
+{% endblock %}
+{% block js %}
+<script>
+  var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
+    return p.toString() === "[object SafariRemoteNotification]";
+  })(!window['safari'] || (typeof safari !== 'undefined' &&
+    window['safari'].pushNotification));
+  if (isSafari) {
+    $(function () {
+      $('.mast-gallery').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname ==
+          this
+          .hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000); // The number here represents the speed of the scroll in milliseconds
+            return false;
+          }
+        }
+      });
+    });
+  }
+</script>
 {% endblock %}
