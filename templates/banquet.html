@@ -27,8 +27,8 @@
   <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
     <div class="d-flex justify-content-center align-items-center h-100">
       <div class="text-white">
-        <h1 class="mb-3" style="font-size: 350%"><b> Indopak Banquet Hall</b></h1>
-        <h5 class="mb-4" style="font-size: 250%"><b>Celebrate with us!</b></h5>
+        <h1 class="mb-3 animate__animated animate__fadeInLeft" style="font-size: 350%"><b> Indopak Banquet Hall</b></h1>
+        <h5 class="mb-4 animate__animated animate__fadeInRight" style="font-size: 250%"><b>Celebrate with us!</b></h5>
         <div class="d-flex justify-content-center">
           <a class="nav-link mast-head btn btn-outline-light btn-lg m-2"
             href="{{url_for('banquet', _anchor='gallery') }}" role="button" style="max-width: 150px;">View Gallery</a>
@@ -43,7 +43,8 @@
 
 {% block content %}
 <div class="container mt-5 py-4">
-  <h1 class="mb-2 animate__animated animate__fadeInUp" style="color:rgb(196, 30, 30); text-align:center"><b> <i>Indopak Banquet Hall</i></b></h1>
+  <h1 class="mb-2" style="color:rgb(196, 30, 30); text-align:center"><b> <i>Indopak
+        Banquet Hall</i></b></h1>
   <p style="font-size:20px; text-align:center"> <b>SW Green Oaks Blvd, Arlington, TX 76017</b> </p>
   <p style="font-size:20px; text-align:center"> We are ready to give you the celebration of a lifetime! Whether it is a
     wedding, graduation, or birthday party, our banquet hall is the perfect venue. We are known for our amazing ambience
@@ -71,15 +72,12 @@
         <li data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="2"></li>
         <li data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="3"></li>
         <li data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="4"></li>
+        <li data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="5"></li>
       </ol>
-      
+
       <div class="carousel-inner" align="center">
         <div class="carousel-item active">
-          <img src="{{url_for('static', filename='images/banquet5.jpg')}}"
-            class="img-fluid d-block carou shadow-5-strong" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="{{url_for('static', filename='images/banquet4.jpg')}}"
+          <img src="{{url_for('static', filename='images/banquet1.jpg')}}"
             class="img-fluid d-block carou shadow-5-strong" alt="..." />
         </div>
         <div class="carousel-item">
@@ -87,30 +85,38 @@
             class="img-fluid d-block carou shadow-5-strong" alt="..." />
         </div>
         <div class="carousel-item">
-          <img src="{{url_for('static', filename='images/banquet1.jpeg')}}"
+          <img src="{{url_for('static', filename='images/banquet4.jpg')}}"
+            class="img-fluid d-block carou shadow-5-strong" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="{{url_for('static', filename='images/banquet5.jpg')}}"
+            class="img-fluid d-block carou shadow-5-strong" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="{{url_for('static', filename='images/banquet6.jpg')}}"
             class="img-fluid d-block carou shadow-5-strong" alt="..." />
         </div>
         <div class="carousel-item">
           <img src="{{url_for('static', filename='images/banquet7.jpg')}}"
             class="img-fluid d-block carou shadow-5-strong" alt="..." />
         </div>
-      
 
 
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-mdb-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-mdb-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </a>
-    </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
 
     </div>
   </div>
   <div class="d-flex justify-content-center">
-    <p style= "text-align:center">Images from <a href="https://www.facebook.com/indopakbanquet/" target="_blank">Indopak Banquet Hall Facebook</a>
+    <p style="text-align:center">Images from <a href="https://www.facebook.com/indopakbanquet/" target="_blank">Indopak
+        Banquet Hall Facebook</a>
       and <a href="https://www.facebook.com/pages/category/Local-Service/Indopakbanquethall-314833875717657/"
         target="_blank">Indopakbanquethall Facebook</a>.
     </p>
