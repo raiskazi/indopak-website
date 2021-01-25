@@ -9,6 +9,12 @@
         background-color: black;
         color: #e0e0e0;
     }
+    @media only screen and (max-width: 768px) {
+        .disappear {
+          display: none; 
+        }
+    }
+
 </style>
 
 {% endblock %}
@@ -43,6 +49,22 @@
 <div class="container cafefont">
 
     {% for type in data%}
+
+    <div class="row">
+        <div class="col-md-4 my-3">
+            <div class="text-center"> <img src="{{url_for('static', filename='images/pic1.png')}}"
+                    class="img-fluid shadow-5-strong strip disappear" /> </div>
+        </div>
+        <div class="col-md-4 my-3">
+            <div class="text-center"><img src="{{url_for('static', filename='images/outside.jpg')}}"
+                    class="img-fluid shadow-5-strong strip" /> </div>
+        </div>
+        <div class="col-md-4 my-3">
+            <div class="text-center"> <img src="{{url_for('static', filename='images/arlingtonuserpic.jpg')}}"
+                    class="img-fluid shadow-5-strong strip disappear" /></div>
+        </div>
+    </div>
+    
     <br>
     <h1 style="color:rgb(196, 30, 30); text-align:center">{{type['Type']}}</h1>
     <br>
