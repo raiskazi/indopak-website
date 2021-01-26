@@ -1,6 +1,7 @@
 {
     "plano": [{
         "Type": "Snacks",
+        "Images": ["../static/images/cafe/snack1.jpg", "../static/images/cafe/snack2.jpg", "../static/images/cafe/snack3.jpg"],
         "Items": [{
             "name": "Aloo Chaat",
             "price": 4.99

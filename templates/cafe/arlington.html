@@ -9,9 +9,10 @@
         background-color: black;
         color: #e0e0e0;
     }
+
     @media only screen and (max-width: 768px) {
         .disappear {
-          display: none; 
+            display: none;
         }
     }
 </style>
@@ -54,24 +55,23 @@
 
     {% for type in data%}
 
-    <div class="row">
-        <div class="col-md-4 my-3">
-            <div class="text-center"> <img src="{{url_for('static', filename='images/pic1.png')}}"
+    <div class="row my-3">
+        <div class="col-md-4">
+            <div class="text-center"> <img src="{{url_for('static', filename='images/pic1.jpg')}}"
                     class="img-fluid shadow-5-strong strip disappear" /> </div>
         </div>
-        <div class="col-md-4 my-3">
-            <div class="text-center"><img src="{{url_for('static', filename='images/outside.jpg')}}"
+        <div class="col-md-4">
+            <div class="text-center"><img src="{{url_for('static', filename='images/pic2.jpg')}}"
                     class="img-fluid shadow-5-strong strip" /> </div>
         </div>
-        <div class="col-md-4 my-3">
-            <div class="text-center"> <img src="{{url_for('static', filename='images/arlingtonuserpic.jpg')}}"
+        <div class="col-md-4">
+            <div class="text-center"> <img src="{{url_for('static', filename='images/pic3.jpg')}}"
                     class="img-fluid shadow-5-strong strip disappear" /></div>
         </div>
     </div>
 
-    <br>
-    <h1 style="color:rgb(196, 30, 30); text-align:center">{{type['Type']}}</h1>
-    <br>
+
+    <h1 style="color:rgb(196, 30, 30); text-align:center" class="mb-1 mt-1">{{type['Type']}}</h1>
 
     <div class="row">
         {% for i in range(0,type['Items']|length) %}
