@@ -205,6 +205,9 @@
             "name": "Murog Pulao",
             "price": 9.99
         }, {
+            "name": "Murog Pulao-Boneless",
+            "price": 12.99
+        }, {
             "name": "Shrimp Biryani",
             "price": 13.99
         }, {
@@ -215,9 +218,6 @@
             "price": 9.99
         }, {
             "name": "Beef Fried Rice",
-            "price": 12.99
-        }, {
-            "name": "Murog Pulao-Boneless",
             "price": 12.99
         }]
     }, {
