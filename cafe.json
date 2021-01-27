@@ -65,6 +65,7 @@
         }]
     }, {
         "Type": "Rolls",
+        "Images": ["../static/images/cafe/bunkabob.jpg", "../static/images/cafe/boti.jpg", "../static/images/cafe/gyro.jpg"],
         "Items": [{
             "name": "Bun Kabab Combo",
             "price": 9.99
@@ -83,6 +84,7 @@
         }]
     }, {
         "Type": "Grill",
+        "Images": ["../static/images/cafe/bonelessboti.jpg", "../static/images/cafe/tandoori.jpg", "../static/images/cafe/sheek.jpg"],
         "Items": [{
             "name": "Beef Sheek Kabab",
             "price": 11.99
@@ -110,8 +112,9 @@
         }]
     }, {
         "Type": "Curry",
+        "Images": ["../static/images/cafe/achar.jpg", "../static/images/cafe/goatkorma.jpg", "../static/images/cafe/butter.jpg"],
         "Items": [{
-            "name": "Achar Chcken Curry",
+            "name": "Achar Chicken Curry",
             "price": 9.99
         }, {
             "name": "Beef Rejala Curry",
@@ -170,6 +173,7 @@
         }]
     }, {
         "Type": "Biryani",
+        "Images": ["../static/images/cafe/goatpulao.jpg", "../static/images/cafe/tikkarice.jpg", "../static/images/cafe/biryani.jpg"],
         "Items": [{
             "name": "Beef Biryani",
             "price": 11.99
@@ -183,13 +187,13 @@
             "name": "Chicken Biryani-Boneless",
             "price": 9.99
         }, {
-            "name": "Chicken Tikka Birayni",
+            "name": "Chicken Tikka Biryani",
             "price": 9.99
         }, {
             "name": "Tilapia Fish Biryani",
             "price": 12.99
         }, {
-            "name": "Goat Birayni",
+            "name": "Goat Biryani",
             "price": 12.99
         }, {
             "name": "Goat Pulao",
@@ -204,7 +208,7 @@
             "name": "Shrimp Biryani",
             "price": 13.99
         }, {
-            "name": "Vegetable Birayni",
+            "name": "Vegetable Biryani",
             "price": 6.99
         }, {
             "name": "Chicken Fried Rice",
@@ -218,6 +222,7 @@
         }]
     }, {
         "Type": "Vegetable",
+        "Images": ["../static/images/cafe/aloobegun.jpg", "../static/images/cafe/begun.jpg", "../static/images/cafe/bhindi.jpg"],
         "Items": [{
             "name": "Aloo Begun",
             "price": 5.99
@@ -246,11 +251,12 @@
             "name": "Mixed Vegetable Curry",
             "price": 5.99
         }, {
-            "name": "Paneer - (Chili or Muttor or Saag)",
+            "name": "Paneer - (Chili or Mutter or Saag)",
             "price": 8.99
         }]
     }, {
         "Type": "Fish",
+        "Images": ["../static/images/cafe/fishcur.jpg", "../static/images/cafe/fishbir.jpg", "../static/images/cafe/fishkab.jpg"],
         "Items": [{
             "name": "Tilapia Fish Biryani",
             "price": 12.99
@@ -275,6 +281,7 @@
         }]
     }, {
         "Type": "Beverages",
+        "Images": ["../static/images/cafe/sweetlassi.jpg", "../static/images/cafe/tea.jpg", "../static/images/cafe/mango.jpg"],
         "Items": [{
             "name": "Hot Tea",
             "price": 1.99
@@ -296,6 +303,7 @@
         }]
     }, {
         "Type": "Sweets",
+        "Images": ["../static/images/cafe/laddu.jpg", "../static/images/cafe/jalebi.jpg", "../static/images/cafe/jalum.jpg"],
         "Items": [{
             "name": "8-Piece Laddu Box",
             "price": 7.99
@@ -308,6 +316,7 @@
         }]
     }, {
         "Type": "Sides",
+        "Images": ["../static/images/cafe/paratha.jpg", "../static/images/cafe/pulaorice.jpg", "../static/images/cafe/butternaan.jpg"],
         "Items": [{
             "name": "Butter Naan",
             "price": 2.49
