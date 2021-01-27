@@ -217,7 +217,7 @@
             "price": 12.99
         }]
     }, {
-        "Type": "Vegetables",
+        "Type": "Vegetable",
         "Items": [{
             "name": "Aloo Begun",
             "price": 5.99
@@ -769,7 +769,7 @@
             "price": 11.99
         }]
     }, {
-        "Type": "Vegetarian",
+        "Type": "Vegetable",
         "Items": [{
             "name": "Mixed Vegetable",
             "price": 6.49
