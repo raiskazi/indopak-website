@@ -316,7 +316,7 @@
         }]
     }, {
         "Type": "Sides",
-        "Images": ["../static/images/cafe/pulaorice.jpg", "../static/images/cafe/paratha.jpg", "../static/images/cafe/butternaan.jpg"],
+        "Images": ["../static/images/cafe/paratha.jpg", "../static/images/cafe/pulaorice.jpg", "../static/images/cafe/butternaan.jpg"],
         "Items": [{
             "name": "Butter Naan",
             "price": 2.49
