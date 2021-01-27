@@ -281,6 +281,7 @@
         }]
     }, {
         "Type": "Beverages",
+        "Images": ["../static/images/cafe/sweetlassi.jpg", "../static/images/cafe/tea.jpg", "../static/images/cafe/mango.jpg"],
         "Items": [{
             "name": "Hot Tea",
             "price": 1.99
@@ -302,6 +303,7 @@
         }]
     }, {
         "Type": "Sweets",
+        "Images": ["../static/images/cafe/laddu.jpg", "../static/images/cafe/jalebi.jpg", "../static/images/cafe/jalum.jpg"],
         "Items": [{
             "name": "8-Piece Laddu Box",
             "price": 7.99
@@ -314,6 +316,7 @@
         }]
     }, {
         "Type": "Sides",
+        "Images": ["../static/images/cafe/pulaorice.jpg", "../static/images/cafe/paratha.jpg", "../static/images/cafe/butternaan.jpg"],
         "Items": [{
             "name": "Butter Naan",
             "price": 2.49
