@@ -1182,6 +1182,7 @@
 
     "irving": [{
         "Type": "Snacks",
+        "Images": ["../static/images/cafe/samosa.jpg", "../static/images/cafe/patties.jpg", "../static/images/cafe/shamikab.jpg"],
         "Items": [{
             "name": "Vegetable Samosa",
             "price": 0.99
@@ -1195,7 +1196,7 @@
             "name": "Chicken Patties",
             "price": 1.99
         }, {
-            "name": "Firsh Kabab",
+            "name": "Fish Kabab",
             "price": 1.49
         }, {
             "name": "Aloo Kabab",
@@ -1215,6 +1216,7 @@
         }]
     }, {
         "Type": "Daily Specials",
+        "Images": ["../static/images/cafe/biryani.jpg", "../static/images/cafe/eggbir.jpg", "../static/images/cafe/fishbir.jpg"],
         "Items": [{
             "name": "Beef Haleem",
             "price": 6.49
@@ -1251,6 +1253,7 @@
         }]
     }, {
         "Type": "Cafe Specials",
+        "Images": ["../static/images/cafe/chickboti.jpg", "../static/images/cafe/sheek.jpg", "../static/images/cafe/goatkorma.jpg"],
         "Items": [{
                 "name": "Chicken Biryani",
                 "price": 6.49
@@ -1336,6 +1339,7 @@
         ]
     }, {
         "Type": "Cafe Specials",
+        "Images": ["../static/images/cafe/begunbhajee.jpg", "../static/images/cafe/sheek.jpg", "../static/images/cafe/goatkorma.jpg"],
         "Items": [{
                 "name": "Begun Bhaji",
                 "price": 4.99
@@ -1351,6 +1355,7 @@
         ]
     }, {
         "Type": "Side Dishes",
+        "Images": ["../static/images/cafe/pulaorice.jpg", "../static/images/cafe/paratha.jpg", "../static/images/cafe/goatkorma.jpg"],
         "Items": [{
                 "name": "Pulao Rice",
                 "price": 1.99
@@ -1366,6 +1371,7 @@
         ]
     }, {
         "Type": "Drinks",
+        "Images": ["../static/images/cafe/mangolassi.jpg", "../static/images/cafe/sweetlassi.jpg", "../static/images/cafe/tea.jpg"],
         "Items": [{
                 "name": "Hot Tea",
                 "price": 1.49
