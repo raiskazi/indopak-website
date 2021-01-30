@@ -908,7 +908,7 @@
 
     "richardson": [{
         "Type": "Snacks", 
-        "Images": [], 
+        "Images": ["../static/images/cafe/samosa.jpg", "../static/images/cafe/shamikab.jpg", "../static/images/cafe/patties.jpg"],
         "Items": [{
             "name": "Vegetable Samosa",
             "price": 1.09
@@ -958,7 +958,7 @@
         }]
     }, {
         "Type": "Sides", 
-        "Images": [], 
+        "Images": ["../static/images/cafe/pulaorice.jpg", "../static/images/cafe/paratha.jpg", "../static/images/cafe/patties.jpg"],
         "Items": [{
             "name": "Pulao Rice", 
             "price": 2.99
@@ -974,7 +974,7 @@
         }]
     }, {
         "Type": "Grill", 
-        "Images": [], 
+        "Images": ["../static/images/cafe/chickboti.jpg", "../static/images/cafe/sheek.jpg", "../static/images/cafe/patties.jpg"],
         "Items": [{
             "name": "Chicken Tandoori Leg", 
             "price": 4.99
@@ -996,7 +996,7 @@
         }]
     }, {
         "Type": "Biryani", 
-        "Images": [], 
+        "Images": ["../static/images/cafe/biryani.jpg", "../static/images/cafe/eggbir.jpg", "../static/images/cafe/fishbir.jpg"],
         "Items": [{
             "name": "Chicken Biryani", 
             "price": 5.99
@@ -1021,7 +1021,7 @@
         }]
     }, {
         "Type": "Everyday Special", 
-        "Images": [], 
+        "Images": ["../static/images/cafe/boti.jpg", "../static/images/cafe/bunkabob.jpg", "../static/images/cafe/chick65.jpg"],
         "Items": [{
             "name": "Bihari Kabab", 
             "price": 7.99
@@ -1086,7 +1086,7 @@
         }]
     }, {
         "Type": "Curry", 
-        "Images": [], 
+        "Images": ["../static/images/cafe/goatkorma.jpg", "../static/images/cafe/achar.jpg", "../static/images/cafe/fishcur.jpg"],
         "Items": [{
             "name": "Goat Korma", 
             "price": 0
@@ -1126,7 +1126,7 @@
         }]
     }, {
         "Type": "Vegetables", 
-        "Images": [], 
+        "Images": ["../static/images/cafe/begunbhajee.jpg", "../static/images/cafe/bhindi.jpg", "../static/images/cafe/aloobegun.jpg"],
         "Items": [{
             "name": "Mixed Vegetables", 
             "price": 0
@@ -1154,7 +1154,7 @@
         }]
     }, {
         "Type": "Drinks", 
-        "Images": [], 
+        "Images": ["../static/images/cafe/tea.jpg", "../static/images/cafe/sweetlassi.jpg", "../static/images/cafe/mangolassi.jpg"], 
         "Items": [{
             "name": "Hot Tea", 
             "price": 0
