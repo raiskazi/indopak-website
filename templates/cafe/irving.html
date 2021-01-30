@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+{% set active_page = "cafe" %}
+
+{% block masthead %}
+
+<section id="top"></section>
+
+<div id="intro-example" class="p-5 text-center bg-image " style="background-image: url('../static/images/cafe.jpeg')">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+                <h1 class="mb-3 animate__animated animate__fadeInLeft intro-text-cafe"><b> India Imports Cafe</b>
+                </h1>
+                <h5 class="mb-4 animate__animated animate__fadeInRight sub-text-cafe"><b> Enjoy!</b></h5>
+                <a class="btn btn-outline-light btn-lg m-2" href="{{url_for('home', _anchor='locations') }}"
+                    role="button" rel="nofollow" style="min-width:195px">Locations</a>
+                <a class="btn btn-outline-light btn-lg m-2" href="{{url_for('cafe')}}" role="button"
+                    style="min-width:195px">Cafe</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="container cafefont">
+
+    {% for type in data%}
+    <div class="row my-3">
+        <div class="col-md-4">
+            <div class="text-center"> <img src="{{url_for('static', filename='images/pic1.jpg')}}"
+                    class="img-fluid shadow-5-strong strip disappear" /> </div>
+        </div>
+        <div class="col-md-4">
+            <div class="text-center"><img src="{{url_for('static', filename='images/pic2.jpg')}}"
+                    class="img-fluid shadow-5-strong strip" /> </div>
+        </div>
+        <div class="col-md-4">
+            <div class="text-center"> <img src="{{url_for('static', filename='images/pic3.jpg')}}"
+                    class="img-fluid shadow-5-strong strip disappear" /></div>
+        </div>
+    </div>
+
+
+    <h1 style="color:rgb(196, 30, 30); text-align:center" class="mb-1 mt-1">{{type['Type']}}</h1>
+
+    <div class="row">
+        {% for i in range(0,type['Items']|length) %}
+        {% if i%2 == 0 %}
+        <div class="col-md-5">
+            <div class="row">
+                <div class="col-8" style="font-size:20px">
+                    <p> <b> {{type['Items'][i]['name']}}</b></p>
+                </div>
+                <div class="col-4" style="font-size:20px">
+                    <div class="d-flex justify-content-end">
+                        <p> <b> {{format_price(type['Items'][i]['price'])}}</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="col-md-5 offset-md-2">
+            <div class="row">
+                <div class="col-8" style="font-size:20px">
+                    <p> <b>{{type['Items'][i]['name']}}</b></p>
+                </div>
+                <div class="col-4" style="font-size:20px">
+                    <div class="d-flex justify-content-end">
+                        <p> <b>{{format_price(type['Items'][i]['price'])}}</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    {% if not loop.last %}
+    <hr>
+    {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}

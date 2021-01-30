@@ -41,7 +41,7 @@ def about():
 @app.route('/cafe/')
 @app.route('/cafe/<location>')
 def cafe(location=None):
-    if location is None or (location != "plano" and location != "richardson" and location != "arlington" and location != "lewisville" and location != "carrollton" and location != "murphy"):
+    if location is None or (location != "plano" and location != "richardson" and location != "arlington" and location != "lewisville" and location != "carrollton" and location != "irving" and location != "murphy"):
         return render_template("cafe/cafe.html")
     with open('cafe.json') as f:
         data = json.load(f)
