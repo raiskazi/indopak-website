@@ -1,6 +1,24 @@
 {% extends "layout.html" %}
 {% set active_page = "cafe" %}
 
+{% block css %}
+
+<style>
+    html,
+    body {
+        background-color: black;
+        color: #e0e0e0;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .disappear {
+            display: none;
+        }
+    }
+</style>
+
+{% endblock %}
+
 {% block masthead %}
 
 <section id="top"></section>
@@ -14,8 +32,9 @@
                 <h5 class="mb-4 animate__animated animate__fadeInRight sub-text-cafe"><b> Enjoy!</b></h5>
                 <a class="btn btn-outline-light btn-lg m-2" href="{{url_for('home', _anchor='locations') }}"
                     role="button" rel="nofollow" style="min-width:195px">Locations</a>
-                <a class="btn btn-outline-light btn-lg m-2" href="{{url_for('cafe')}}" role="button"
-                    style="min-width:195px">Cafe</a>
+                    <a class="btn btn-outline-light btn-lg m-2"
+                    href="https://www.grubhub.com/restaurant/india-imports-2521-w-airport-fwy-irving/2334711"
+                    role="button" target="_blank" style="min-width:195px">Order on GrubHub</a>
             </div>
         </div>
     </div>
@@ -27,22 +46,17 @@
 
 <div class="container cafefont">
 
-    {% for type in data%}
-    <div class="row my-3">
-        <div class="col-md-4">
-            <div class="text-center"> <img src="{{url_for('static', filename='images/pic1.jpg')}}"
-                    class="img-fluid shadow-5-strong strip disappear" /> </div>
+    <div class="container cafefont">
+        <div class="mt-4"></div>
+        {% for type in data%}
+        <div class="row my-3">
+            {% for image in type['Images'] %}
+            <div class="col-md-4">
+                <div class="text-center"> <img src="{{image}}" {% if loop.first %} class="img-fluid shadow-5-strong" {% else %} class="img-fluid shadow-5-strong strip disappear" {% endif %}
+                         style="width: 100%;"/> </div>
+            </div>
+            {% endfor %}
         </div>
-        <div class="col-md-4">
-            <div class="text-center"><img src="{{url_for('static', filename='images/pic2.jpg')}}"
-                    class="img-fluid shadow-5-strong strip" /> </div>
-        </div>
-        <div class="col-md-4">
-            <div class="text-center"> <img src="{{url_for('static', filename='images/pic3.jpg')}}"
-                    class="img-fluid shadow-5-strong strip disappear" /></div>
-        </div>
-    </div>
-
 
     <h1 style="color:rgb(196, 30, 30); text-align:center" class="mb-1 mt-1">{{type['Type']}}</h1>
 
