@@ -47,22 +47,15 @@
 {% block content %}
 
 <div class="container cafefont">
-
+    <div class="mt-4"></div>
     {% for type in data%}
-
     <div class="row my-3">
+        {% for image in type['Images'] %}
         <div class="col-md-4">
-            <div class="text-center"> <img src="{{url_for('static', filename='images/pic1.jpg')}}"
-                    class="img-fluid shadow-5-strong strip disappear" /> </div>
+            <div class="text-center"> <img src="{{image}}" {% if loop.first %} class="img-fluid shadow-5-strong" {% else %} class="img-fluid shadow-5-strong strip disappear" {% endif %}
+                     style="width: 100%;"/> </div>
         </div>
-        <div class="col-md-4">
-            <div class="text-center"><img src="{{url_for('static', filename='images/pic2.jpg')}}"
-                    class="img-fluid shadow-5-strong strip" /> </div>
-        </div>
-        <div class="col-md-4">
-            <div class="text-center"> <img src="{{url_for('static', filename='images/pic3.jpg')}}"
-                    class="img-fluid shadow-5-strong strip disappear" /></div>
-        </div>
+        {% endfor %}
     </div>
 
 

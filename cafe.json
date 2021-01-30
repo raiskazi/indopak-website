@@ -492,8 +492,21 @@
             "price": null
         }]
     }],
+
+
+
+
+
+
+
+
+
+
+
+
     "lewisville": [{
         "Type": "Snacks",
+        "Images": ["../static/images/cafe/patties.jpg", "../static/images/cafe/paratha.jpg", "../static/images/cafe/papdichaat.jpg"],
         "Items": [{
             "name": "Chicken Patties",
             "price": 1.79
@@ -551,6 +564,7 @@
         }]
     }, {
         "Type": "Grill",
+        "Images": ["../static/images/cafe/chickboti.jpg", "../static/images/cafe/sheek.jpg", "../static/images/cafe/papdichaat.jpg"],
         "Items": [{
             "name": "Chicken Tandoori Leg",
             "price": 3.99
@@ -575,6 +589,7 @@
         }]
     }, {
         "Type": "Vegetable Dishes",
+        "Images": ["../static/images/cafe/bhindi.jpg", "../static/images/cafe/begunbhajee.jpg", "../static/images/cafe/choleybhutura.jpg"],
         "Items": [{
             "name": "Bhuna Daal",
             "price": 4.99
@@ -593,6 +608,7 @@
         }]
     }, {
         "Type": "Curry",
+        "Images": ["../static/images/cafe/daalgosht.jpg", "../static/images/cafe/goatkorma.jpg", "../static/images/cafe/choleybhutura.jpg"],
         "Items": [{
             "name": "Chicken Tikka Masala",
             "price": 8.99
@@ -641,6 +657,7 @@
         }]
     }, {
         "Type": "Biryani",
+        "Images": ["../static/images/cafe/biryani.jpg", "../static/images/cafe/fishbir.jpg", "../static/images/cafe/eggbir.jpg"],
         "Items": [{
             "name": "Goat Biryani",
             "price": 9.99
@@ -662,6 +679,7 @@
         }]
     }, {
         "Type": "Daily Specials",
+        "Images": ["../static/images/cafe/beefroll.jpg", "../static/images/cafe/pulaorice.jpg", "../static/images/cafe/boti.jpg"],
         "Items": [{
             "name": "Chicken Biryani",
             "price": 5.99
@@ -686,6 +704,7 @@
         }]
     }, {
         "Type": "Beverages",
+        "Images": ["../static/images/cafe/sweetlassi.jpg", "../static/images/cafe/mangolassi.jpg", "../static/images/cafe/mango.jpg"],
         "Items": [{
             "name": "Sweet Lassi",
             "price": 2.99
@@ -717,7 +736,7 @@
 
     "arlington": [{
         "Type": "Snacks",
-        "Images": ["../static/images/cafe/shamikab.jpg", "../static/images/cafe/samosa.jpg", "../static/images/cafe/springrioll.jpg"],
+        "Images": ["../static/images/cafe/samosa.jpg", "../static/images/cafe/shamikab.jpg", "../static/images/cafe/springrioll.jpg"],
         "Items": [{
             "name": "Shami Kabab",
             "price": 1.99
