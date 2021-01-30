@@ -106,9 +106,24 @@
 
         <div class="col-md-4 my-3">
             <div class="bg-image text-center">
-                <img src="{{url_for('static', filename='images/murphy.jpg')}}"
+                <img src="{{url_for('static', filename='images/irving.jpg')}}"
                     class="img-responsive img-fluid shadow-5-strong w-100" />
                 <a href="{{ url_for('cafe', location='murphy') }}">
+                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <p class="text-white mb-0" style="font-size:40px">India Imports </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 my-3">
+            <div class="bg-image text-center ">
+                <img src="{{url_for('static', filename='images/murphy.jpg')}}"
+                    class="img-responsive img-fluid shadow-5-strong" />
+                <a href="{{ url_for('cafe', location='lewisville') }}">
                     <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
                         <div class="d-flex justify-content-center align-items-center h-100">
                             <p class="text-white mb-0" style="font-size:40px">Murphy </p>
@@ -117,6 +132,7 @@
                 </a>
             </div>
         </div>
+
     </div>
 </div>
 

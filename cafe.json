@@ -853,7 +853,7 @@
             "price": 8.99
         }]
     }],
-    "richardson": {},
+    "richardson": [{}, {}],
     "murphy": {},
     "irving": [{
         "Type": "Snacks",
@@ -927,38 +927,140 @@
     }, {
         "Type": "Cafe Specials",
         "Items": [{
-            "name": "Chicken Biryani",
-            "price": 6.49
-        }, {
-            "name": "Kabab Roll",
-            "price": 4.99
-        }, {
-            "name": "Fish Combo",
-            "price": 7.49
-        }, {
-            "name": "Grill Combo",
-            "price": 7.49
-        }, {
-            "name": "Samosa Chaat",
-            "price": 4.99
-        }, {
-            "name": "Bun Kabab Combo",
-            "price": 8.99
-        }, {
-            "name": "Chicken Momo",
-            "price": 4.99
-        }, {
-            "name": "Combo Special",
-            "price": 3.99
-        }, {
-            "name": "Pani Puri",
-            "price": 4.99
-        }, {
-            "name": "Chole Chaat",
-            "price": 3.99
-        }, {
-            "name": "Chicken Tikka Masala",
-            "price": 7.99
-        }]
+                "name": "Chicken Biryani",
+                "price": 6.49
+            }, {
+                "name": "Kabab Roll",
+                "price": 4.99
+            }, {
+                "name": "Fish Combo",
+                "price": 7.49
+            }, {
+                "name": "Grill Combo",
+                "price": 7.49
+            }, {
+                "name": "Samosa Chaat",
+                "price": 4.99
+            }, {
+                "name": "Bun Kabab Combo",
+                "price": 8.99
+            }, {
+                "name": "Chicken Momo",
+                "price": 4.99
+            }, {
+                "name": "Combo Special",
+                "price": 3.99
+            }, {
+                "name": "Pani Puri",
+                "price": 4.99
+            }, {
+                "name": "Chole Chaat",
+                "price": 3.99
+            }, {
+                "name": "Chicken Tikka Masala",
+                "price": 7.99
+            },
+            {
+                "name": "Butter Chicken",
+                "price": 7.49
+            },
+            {
+                "name": "Chicken Tandoori Leg",
+                "price": 7.49
+            },
+            {
+                "name": "Chicken Tandoori Breast",
+                "price": 4.99
+            },
+            {
+                "name": "Chicken Boti",
+                "price": 8.99
+            },
+            {
+                "name": "Sheek Kabab - Chicken",
+                "price": 4.99
+            },
+            {
+                "name": "Sheek Kabab - Beef",
+                "price": 3.99
+            },
+            {
+                "name": "Goat Korma",
+                "price": 4.99
+            },
+            {
+                "name": "Karahi Goat",
+                "price": 3.99
+            },
+            {
+                "name": "Chicken Korma",
+                "price": 7.99
+            },
+            {
+                "name": "Chicken Karahi",
+                "price": 4.99
+            },
+            {
+                "name": "Beef Rezala",
+                "price": 3.99
+            },
+            {
+                "name": "Boti Roll",
+                "price": 7.99
+            }
+        ]
+    }, {
+        "Type": "Cafe Specials",
+        "Items": [{
+                "name": "Begun Bhaji",
+                "price": 4.99
+            },
+            {
+                "name": "Mixed Vegetable",
+                "price": 5.99
+            },
+            {
+                "name": "Bhuna Daal",
+                "price": 4.99
+            }
+        ]
+    }, {
+        "Type": "Side Dishes",
+        "Items": [{
+                "name": "Pulao Rice",
+                "price": 1.99
+            },
+            {
+                "name": "Naan",
+                "price": 1.99
+            },
+            {
+                "name": "Plain Paratha",
+                "price": 1.49
+            }
+        ]
+    }, {
+        "Type": "Drinks",
+        "Items": [{
+                "name": "Hot Tea",
+                "price": 1.49
+            },
+            {
+                "name": "Sweet Lassi",
+                "price": 2.49
+            },
+            {
+                "name": "Mango Lassi",
+                "price": 2.49
+            },
+            {
+                "name": "Canned Soda",
+                "price": 0.99
+            },
+            {
+                "name": "Banana Lassi",
+                "price": 1.99
+            }
+        ]
     }]
 }
