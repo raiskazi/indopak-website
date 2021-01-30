@@ -340,8 +340,20 @@
             "price": 0.00
         }]
     }],
+
+
+
+
+
+
+
+
+
+
+
     "carrollton": [{
         "Type": "Specials",
+        "Images": ["../static/images/cafe/goatyakhnyjpg.jpg", "../static/images/cafe/pulaorice.jpg", "../static/images/cafe/bihari.jpg"],
         "Items": [{
             "name": "Thursdays - Goat Yakhny Pulao",
             "price": 6.99
@@ -360,6 +372,7 @@
         }]
     }, {
         "Type": "Party Orders",
+        "Images": ["../static/images/cafe/biryani.jpg", "../static/images/cafe/goatkorma.jpg", "../static/images/cafe/goatcurry.jpg"],
         "Items": [{
             "name": "Bhuna Daal (Medium Tray)",
             "price": 25.00
@@ -420,6 +433,7 @@
         }]
     }, {
         "Type": "Snacks",
+        "Images": ["../static/images/cafe/snack3.jpg", "../static/images/cafe/papdichaat.jpg", "../static/images/cafe/patties.jpg"],
         "Items": [{
             "name": "Chicken Patties",
             "price": null
@@ -441,6 +455,7 @@
         }]
     }, {
         "Type": "Biryani",
+        "Images": ["../static/images/cafe/biryani.jpg", "../static/images/cafe/eggbir.jpg", "../static/images/cafe/fishbir.jpg"],
         "Items": [{
             "name": "Goat Biryani",
             "price": null
@@ -459,6 +474,7 @@
         }]
     }, {
         "Type": "Vegetable",
+        "Images": ["../static/images/cafe/begunbhajee.jpg", "../static/images/cafe/bhindi.jpg", "../static/images/cafe/choleybhutura.jpg"],
         "Items": [{
             "name": "Mix Vegetables",
             "price": null
@@ -693,8 +709,15 @@
             "price": 2.99
         }]
     }],
+
+
+
+
+
+
     "arlington": [{
         "Type": "Snacks",
+        "Images": ["../static/images/cafe/shamikab.jpg", "../static/images/cafe/samosa.jpg", "../static/images/cafe/springrioll.jpg"],
         "Items": [{
             "name": "Shami Kabab",
             "price": 1.99
@@ -713,6 +736,7 @@
         }]
     }, {
         "Type": "Biryani",
+        "Images": ["../static/images/cafe/fishbir.jpg", "../static/images/cafe/biryani.jpg", "../static/images/cafe/eggbir.jpg"],
         "Items": [{
             "name": "Vegetable Biryani",
             "price": 7.99
@@ -737,6 +761,7 @@
         }]
     }, {
         "Type": "Curry",
+        "Images": ["../static/images/cafe/goatkorma.jpg", "../static/images/cafe/butter.jpg", "../static/images/cafe/chickenkarahi.jpg"],
         "Items": [{
             "name": "Goat Korma",
             "price": 11.99
@@ -764,6 +789,7 @@
         }]
     }, {
         "Type": "Grill",
+        "Images": ["../static/images/cafe/chickboti.jpg", "../static/images/cafe/sheek.jpg", "../static/images/cafe/tandoori.jpg"],
         "Items": [{
             "name": "Chicken Boti Plate",
             "price": 8.99
@@ -779,6 +805,7 @@
         }]
     }, {
         "Type": "Vegetable",
+        "Images": ["../static/images/cafe/bhindi.jpg", "../static/images/cafe/begunbhajee.jpg", "../static/images/cafe/paneer.jpg"],
         "Items": [{
             "name": "Mixed Vegetable",
             "price": 6.49
@@ -797,6 +824,7 @@
         }]
     }, {
         "Type": "Rolls",
+        "Images": ["../static/images/cafe/boti.jpg", "../static/images/cafe/beefroll.jpg", "../static/images/cafe/chickenroll.jpg"],
         "Items": [{
             "name": "Chicken Boti Roll",
             "price": 5.99
@@ -812,6 +840,7 @@
         }]
     }, {
         "Type": "Sides",
+        "Images": ["../static/images/cafe/pulaorice.jpg", "../static/images/cafe/paratha.jpg", "../static/images/cafe/mangolassi.jpg"],
         "Items": [{
             "name": "Pulao Rice",
             "price": 2.49
@@ -834,11 +863,12 @@
             "name": "Mango Lassi",
             "price": 3.79
         }, {
-            "name": "Soft Drinl",
+            "name": "Soft Drink",
             "price": 1.29
         }]
     }, {
         "Type": "Our Daily Special",
+        "Images": ["../static/images/cafe/daalgosht.jpg", "../static/images/cafe/chick65.jpg", "../static/images/cafe/tehari.jpg"],
         "Items": [{
             "name": "Chicken 65 Special",
             "price": 11.99
@@ -853,8 +883,9 @@
             "price": 8.99
         }]
     }],
-    "richardson": [{}, {}],
+    "richardson": {},
     "murphy": {},
+
     "irving": [{
         "Type": "Snacks",
         "Items": [{
