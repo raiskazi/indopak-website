@@ -14,6 +14,10 @@
         overflow: auto;
     }
 
+    /* .img-fluid {
+        height: 100%;
+    } */
+
     .footer {
         position: relative;
         margin-top: -150px;
@@ -31,10 +35,11 @@
 <div class="container-fluid">
 
     <div class="row">
+
         <div class="col-md-4 my-3">
             <div class="bg-image text-center">
                 <img src="{{url_for('static', filename='images/planooutside.jpg')}}"
-                    class="img-responsive img-fluid shadow-5-strong " />
+                    class="img-responsive img-fluid shadow-5-strong w-100" />
                 <a href="{{ url_for('cafe', location='plano') }}">
                     <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
                         <div class="d-flex justify-content-center align-items-center h-100">
@@ -58,11 +63,12 @@
                 </a>
             </div>
         </div>
+        
 
         <div class="col-md-4 my-3">
             <div class="bg-image text-center">
                 <img src="{{url_for('static', filename='images/arlington.jpg')}}"
-                    class="img-responsive img-fluid shadow-5-strong" />
+                    class="img-responsive img-fluid shadow-5-strong w-100" />
                 <a href="{{ url_for('cafe', location='arlington') }}">
                     <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
                         <div class="d-flex justify-content-center align-items-center h-100">
@@ -79,7 +85,7 @@
         <div class="col-md-4 my-3">
             <div class="bg-image text-center ">
                 <img src="{{url_for('static', filename='images/lewisville.jpg')}}"
-                    class="img-responsive img-fluid shadow-5-strong" />
+                    class="img-responsive img-fluid shadow-5-strong w-100" />
                 <a href="{{ url_for('cafe', location='lewisville') }}">
                     <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
                         <div class="d-flex justify-content-center align-items-center h-100">
@@ -93,7 +99,7 @@
         <div class="col-md-4 my-3">
             <div class="bg-image text-center ">
                 <img src="{{url_for('static', filename='images/carrollton.jpg')}}"
-                    class="img-responsive img-fluid shadow-5-strong" />
+                    class="img-responsive img-fluid shadow-5-strong w-100"  />
                 <a href="{{ url_for('cafe', location='carrollton') }}">
                     <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
                         <div class="d-flex justify-content-center align-items-center h-100">
@@ -122,7 +128,7 @@
         <div class="col-md-4 my-3">
             <div class="bg-image text-center ">
                 <img src="{{url_for('static', filename='images/murphy.jpg')}}"
-                    class="img-responsive img-fluid shadow-5-strong" />
+                    class="img-responsive img-fluid shadow-5-strong w-100" />
                 <a href="{{ url_for('cafe', location='lewisville') }}">
                     <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
                         <div class="d-flex justify-content-center align-items-center h-100">

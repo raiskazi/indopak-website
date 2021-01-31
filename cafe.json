@@ -92,10 +92,10 @@
             "name": "Chicken Sheek Kabab",
             "price": 9.99
         }, {
-            "name": "Breast Chicken Tandoori",
+            "name": "Chicken Breast Tandoori",
             "price": 4.99
         }, {
-            "name": "Leg Chicken Tandoori",
+            "name": "Chicken Leg Tandoori",
             "price": 3.99
         }, {
             "name": "6-Piece Boneless Chicken Boti",
@@ -168,7 +168,7 @@
             "name": "Nihari Curry",
             "price": 15.99
         }, {
-            "name": "Chicken Karai-Boneless",
+            "name": "Boneless Chicken Karai",
             "price": 12.99
         }]
     }, {
@@ -184,7 +184,7 @@
             "name": "Chicken Biryani",
             "price": 6.99
         }, {
-            "name": "Chicken Biryani-Boneless",
+            "name": "Boneless Chicken Biryani",
             "price": 9.99
         }, {
             "name": "Chicken Tikka Biryani",
@@ -199,13 +199,13 @@
             "name": "Goat Pulao",
             "price": 13.99
         }, {
-            "name": "Lamb Biryani-Boneless",
+            "name": "Boneless Lamb Biryani",
             "price": 15.99
         }, {
             "name": "Murog Pulao",
             "price": 9.99
         }, {
-            "name": "Murog Pulao-Boneless",
+            "name": "Boneless Murog Pulao",
             "price": 12.99
         }, {
             "name": "Shrimp Biryani",
@@ -337,7 +337,7 @@
         "Type": "Ramadan (Seasonal)",
         "Items": [{
             "name": "Iftar Box, Chana",
-            "price": 0.00
+            "price": null
         }]
     }],
 
@@ -355,19 +355,19 @@
         "Type": "Specials",
         "Images": ["../static/images/cafe/goatyakhnyjpg.jpg", "../static/images/cafe/pulaorice.jpg", "../static/images/cafe/bihari.jpg"],
         "Items": [{
-            "name": "Thursdays - Goat Yakhny Pulao",
+            "name": "Thurs - Goat Yakhny Pulao",
             "price": 6.99
         }, {
-            "name": "Tuesdays and Wednesdays - Murog Pulao",
+            "name": "Tues & Wed - Murog Pulao",
             "price": 5.99
         }, {
-            "name": "Fridays, Saturdays, and Sundays - Beef Bhuna Gosht",
+            "name": "Weekends - Beef Bhuna Gosht",
             "price": 6.99
         }, {
-            "name": "Fridays, Saturdays, and Sundays - Beef Bihari Kabab",
+            "name": "Weekends - Beef Bihari Kabab",
             "price": 6.99
         }, {
-            "name": "Fridays, Saturdays, and Sundays - Chicken Korma",
+            "name": "Weekends - Chicken Korma",
             "price": 5.99
         }]
     }, {
@@ -482,7 +482,7 @@
             "name": "Begun Bhajee",
             "price": null
         }, {
-            "name": "Choley Bhutura",
+            "name": "Chole Bhutura",
             "price": null
         }, {
             "name": "Bhidi Masala",
@@ -566,7 +566,7 @@
         "Type": "Grill",
         "Images": ["../static/images/cafe/chickboti.jpg", "../static/images/cafe/sheek.jpg", "../static/images/cafe/tandleg.jpg"],
         "Items": [{
-            "name": "Chicken Tandoori Leg",
+            "name": "Chicken Leg Tandoori",
             "price": 3.99
         }, {
             "name": "Chicken Breast",
@@ -600,7 +600,7 @@
             "name": "Bhindi Masala",
             "price": 5.99
         }, {
-            "name": "Begun Bhaji",
+            "name": "Begun Bhajee",
             "price": 5.99
         }, {
             "name": "Chole Bhatura",
@@ -830,16 +830,16 @@
             "name": "Mixed Vegetable",
             "price": 6.49
         }, {
-            "name": "Begun Bhaji",
+            "name": "Begun Bhajee",
             "price": 6.49
         }, {
-            "name": "Bhindi Bhaji",
+            "name": "Bhindi Bhajee",
             "price": 6.49
         }, {
             "name": "Bhuna Daal",
             "price": 6.49
         }, {
-            "name": "Paneer Matar",
+            "name": "Paneer Mutter",
             "price": 10.99
         }]
     }, {
@@ -932,7 +932,7 @@
             "name": "Chicken Patties",
             "price": 1.79
         }, {
-            "name": "Hot Wings(3 pcs)",
+            "name": "3-Piece Hot Wings",
             "price": 3.99
         },  {
             "name": "Potato Cutlet",
@@ -951,10 +951,10 @@
             "name": "French Fries", 
             "price": 2.99
         }, {
-            "name": "Chicken Nuggets (5pcs)", 
+            "name": "5-Piece Chicken Nuggets", 
             "price": 1.99
         }, {
-            "name": "Fish Sticks (6pcs)", 
+            "name": "6-Piece Fish Sticks", 
             "price": 2.99
         }]
     }, {
@@ -992,7 +992,7 @@
             "name": "Beef Sheek Kabab", 
             "price": 4.99
         }, {
-            "name": "_____ Sheek Kabab", 
+            "name": "Mutton Sheek Kabab", 
             "price": 4.99
         }]
     }, {
@@ -1002,7 +1002,7 @@
             "name": "Chicken Biryani", 
             "price": 5.99
         }, {
-            "name": "Chicken Biryani ____", 
+            "name": "Chicken Biryani Special", 
             "price": 7.99
         }, {
             "name": "Goat Biryani", 
@@ -1027,13 +1027,13 @@
             "name": "Bihari Kabab", 
             "price": 7.99
         }, {
-            "name": "Fish Combo (w/ Rice and Naan)", 
+            "name": "Fish Combo w/ Rice and Naan", 
             "price": 7.99
         }, {
             "name": "Chicken 65", 
             "price": 7.99
         },  {
-            "name": "Thali Combo (w/ Rice and Naan)", 
+            "name": "Thali Combo w/ Rice and Naan", 
             "price": 7.99
         }, {
             "name": "Lahori Fish", 
@@ -1057,19 +1057,19 @@
             "name": "Nuggets", 
             "price": 1.99
         },  {
-            "name": "Fish Sticks (6pcs)", 
+            "name": "6-Piece Fish Sticks", 
             "price": 2.99
         }, {
-            "name": "Karachi Bun Kabab (Beef)", 
+            "name": "Beef Karachi Bun Kabab", 
             "price": 3.99
         }, {
             "name": "Chicken Boti Roll", 
             "price": 4.99
         }, {
-            "name": "Z____", 
+            "name": "Zarda", 
             "price": 2.99
         }, {
-            "name": "Laccha Rab__", 
+            "name": "Laccha Rabdi", 
             "price": 2.99
         }]
     }, {
@@ -1090,90 +1090,90 @@
         "Images": ["../static/images/cafe/goatkorma.jpg", "../static/images/cafe/achar.jpg", "../static/images/cafe/fishcur.jpg"],
         "Items": [{
             "name": "Goat Korma", 
-            "price": 0
+            "price": null
         }, {
             "name": "Goat Karhai", 
-            "price": 0
+            "price": null
         }, {
             "name": "Chicken Korma", 
-            "price": 0
+            "price": null
         }, {
             "name": "Chicken Karhai", 
-            "price": 0
+            "price": null
         }, {
             "name": "Chicken Chole", 
-            "price": 0
+            "price": null
         }, {
             "name": "Achar Chicken", 
-            "price": 0
+            "price": null
         }, {
             "name": "Beef Rejala", 
-            "price": 0
+            "price": null
         }, {
             "name": "Daal Gosht", 
-            "price": 0
+            "price": null
         }, {
-            "name": "Keema Muttor", 
-            "price": 0
+            "name": "Keema Mutter", 
+            "price": null
         }, {
             "name": "Haleem", 
-            "price": 0
+            "price": null
         }, {
             "name": "Fish Curry", 
-            "price": 0
+            "price": null
         }, {
             "name": "Shrimp Curry", 
-            "price": 0
+            "price": null
         }]
     }, {
         "Type": "Vegetables", 
         "Images": ["../static/images/cafe/begunbhajee.jpg", "../static/images/cafe/bhindi.jpg", "../static/images/cafe/aloobegun.jpg"],
         "Items": [{
             "name": "Mixed Vegetables", 
-            "price": 0
+            "price": null
         }, {
-            "name": "Aloo Muttor", 
-            "price": 0
+            "name": "Aloo Mutter", 
+            "price": null
         }, {
             "name": "Aloo Bengoon", 
-            "price": 0
+            "price": null
         }, {
             "name": "Bengoon Bhajee", 
-            "price": 0
+            "price": null
         }, {
             "name": "Bhindi Bhajee", 
-            "price": 0
+            "price": null
         }, {
             "name": "Bhindi Masala", 
-            "price": 0
+            "price": null
         }, {
             "name": "Bhindi Daal", 
-            "price": 0
+            "price": null
         }, {
             "name": "Bhuna Daal", 
-            "price": 0
+            "price": null
         }]
     }, {
         "Type": "Drinks", 
         "Images": ["../static/images/cafe/tea.jpg", "../static/images/cafe/sweetlassi.jpg", "../static/images/cafe/mangolassi.jpg"], 
         "Items": [{
             "name": "Hot Tea", 
-            "price": 0
+            "price": null
         }, {
             "name": "Soda Can", 
-            "price": 0
+            "price": null
         }, {
             "name": "Bottle Water", 
-            "price": 0
+            "price": null
         }, {
             "name": "Bottle Juice", 
-            "price": 0
+            "price": null
         }, {
             "name": "Sweet Lassi", 
-            "price": 0
+            "price": null
         }, {
             "name": "Mango Lassi", 
-            "price": 0
+            "price": null
         }] 
     }],
 
@@ -1342,7 +1342,7 @@
         "Type": "Cafe Specials",
         "Images": ["../static/images/cafe/begunbhajee.jpg", "../static/images/cafe/mixveg.jpg", "../static/images/cafe/bhunadaal.jpg"],
         "Items": [{
-                "name": "Begun Bhaji",
+                "name": "Begun Bhajee'",
                 "price": 4.99
             },
             {

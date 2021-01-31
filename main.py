@@ -13,7 +13,7 @@ def inject_now():
 def utility_processor():
     def format_price(amount, currency=u'$'):
         if amount is None:
-            return 'Price not available'
+            return '(N/A)'
         return u'{1}{0:.2f}'.format(amount, currency)
     return dict(format_price=format_price)
 
