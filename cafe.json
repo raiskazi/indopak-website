@@ -485,7 +485,7 @@
             "name": "Chole Bhutura",
             "price": null
         }, {
-            "name": "Bhidi Masala",
+            "name": "Bhindi Masala",
             "price": null
         }, {
             "name": "Bhuna Daal",
@@ -1306,11 +1306,11 @@
                 "price": 8.99
             },
             {
-                "name": "Sheek Kabab - Chicken",
+                "name": "Chicken Sheek Kabab",
                 "price": 4.99
             },
             {
-                "name": "Sheek Kabab - Beef",
+                "name": "Beef Sheek Kabab",
                 "price": 3.99
             },
             {
