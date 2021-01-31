@@ -564,7 +564,7 @@
         }]
     }, {
         "Type": "Grill",
-        "Images": ["../static/images/cafe/chickboti.jpg", "../static/images/cafe/sheek.jpg", "../static/images/cafe/papdichaat.jpg"],
+        "Images": ["../static/images/cafe/chickboti.jpg", "../static/images/cafe/sheek.jpg", "../static/images/cafe/tandleg.jpg"],
         "Items": [{
             "name": "Chicken Tandoori Leg",
             "price": 3.99
@@ -608,7 +608,7 @@
         }]
     }, {
         "Type": "Curry",
-        "Images": ["../static/images/cafe/daalgosht.jpg", "../static/images/cafe/goatkorma.jpg", "../static/images/cafe/choleybhutura.jpg"],
+        "Images": ["../static/images/cafe/daalgosht.jpg", "../static/images/cafe/goatkorma.jpg", "../static/images/cafe/goatkad.jpg"],
         "Items": [{
             "name": "Chicken Tikka Masala",
             "price": 8.99
@@ -958,7 +958,7 @@
         }]
     }, {
         "Type": "Sides", 
-        "Images": ["../static/images/cafe/pulaorice.jpg", "../static/images/cafe/paratha.jpg", "../static/images/cafe/patties.jpg"],
+        "Images": ["../static/images/cafe/paratha.jpg", "../static/images/cafe/pulaorice.jpg", "../static/images/cafe/naan.jpg"],
         "Items": [{
             "name": "Pulao Rice", 
             "price": 2.99
@@ -974,7 +974,7 @@
         }]
     }, {
         "Type": "Grill", 
-        "Images": ["../static/images/cafe/chickboti.jpg", "../static/images/cafe/sheek.jpg", "../static/images/cafe/patties.jpg"],
+        "Images": ["../static/images/cafe/chickboti.jpg", "../static/images/cafe/sheek.jpg", "../static/images/cafe/tandleg.jpg"],
         "Items": [{
             "name": "Chicken Tandoori Leg", 
             "price": 4.99
@@ -1339,7 +1339,7 @@
         ]
     }, {
         "Type": "Cafe Specials",
-        "Images": ["../static/images/cafe/begunbhajee.jpg", "../static/images/cafe/sheek.jpg", "../static/images/cafe/goatkorma.jpg"],
+        "Images": ["../static/images/cafe/begunbhajee.jpg", "../static/images/cafe/mixveg.jpg", "../static/images/cafe/bhunadaal.jpg"],
         "Items": [{
                 "name": "Begun Bhaji",
                 "price": 4.99
@@ -1355,7 +1355,7 @@
         ]
     }, {
         "Type": "Side Dishes",
-        "Images": ["../static/images/cafe/pulaorice.jpg", "../static/images/cafe/paratha.jpg", "../static/images/cafe/goatkorma.jpg"],
+        "Images": ["../static/images/cafe/pulaorice.jpg", "../static/images/cafe/paratha.jpg", "../static/images/cafe/naan.jpg"],
         "Items": [{
                 "name": "Pulao Rice",
                 "price": 1.99
