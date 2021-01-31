@@ -57,8 +57,9 @@
     <div class="row my-3">
         {% for image in type['Images'] %}
         <div class="col-md-4">
-            <div class="text-center"> <img src="{{image}}" {% if loop.first %} class="img-fluid shadow-5-strong" {% else %} class="img-fluid shadow-5-strong strip disappear" {% endif %}
-                     style="width: 100%;"/> </div>
+            <div class="text-center"> <img src="{{image}}" {% if loop.first %} class="img-fluid shadow-5-strong"
+                    {% else %} class="img-fluid shadow-5-strong strip disappear" {% endif %} style="width: 100%;" />
+            </div>
         </div>
         {% endfor %}
     </div>
@@ -101,5 +102,11 @@
     <hr>
     {% endif %}
     {% endfor %}
+    <div class=" mt-5">
+        <p style="text-align:center">Images provided by <a href="https://www.google.com" target="_blank">Google</a>.
+        </p>
+        <p style="text-align:center">Disclaimer: Prices may vary.
+        </p>
+    </div>
 </div>
 {% endblock %}
