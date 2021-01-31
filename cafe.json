@@ -642,6 +642,7 @@
         }]
     }, {
         "Type": "Fish",
+        "Images": ["../static/images/cafe/fishfry.jpg", "../static/images/cafe/fishmasala.jpg", "../static/images/cafe/fishbasa.jpg"],
         "Items": [{
             "name": "Fish Fry Tilapia",
             "price": 8.99
