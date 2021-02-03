@@ -23,7 +23,7 @@
 
 {% block masthead %}
 
-<section id="top"></section>
+<!-- <section id="top"></section>
 
 <div id="intro-example" class="p-5 text-center bg-image "
     style="background-image: url('../static/images/cafe/chicksheek.jpg')">
@@ -41,14 +41,28 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 {% endblock %}
 
 {% block content %}
 
 <div class="container cafefont">
-    <div class="mt-4"></div>
+    
+    <div class="d-flex justify-content-center align-items-center h-100" style="padding-top: 13%; padding-bottom: 8%">
+        <div class="text-white text-center">
+            <h1 class="mb-3 animate__animated animate__fadeInLeft intro-text-cafe"><b> Lewisville Cafe</b>
+            </h1>
+            <h5 class="mb-4 animate__animated animate__fadeInRight sub-text-cafe"><b> Enjoy!</b></h5>
+            <a class="btn btn-outline-light btn-lg m-2" href="tel:877-585-1085" role="button" rel="nofollow"
+                style="min-width:195px">(877) 585-1085</a>
+            <a class="btn btn-outline-light btn-lg m-2"
+                href="https://www.ubereats.com/dallas/food-delivery/indopak-cafe-lewisville/-Zk_cTUKR96aHFIll6p0gg"
+                role="button" target="_blank" style="min-width:195px">Order on UberEats</a>
+        </div>
+    </div>
+
+
     {% for type in data%}
     <div class="row my-3">
         {% for image in type['Images'] %}
