@@ -25,12 +25,11 @@
 
 {% block masthead %}
 
-<section id="top"></section>
+<!-- <section id="top"></section>
 
-<div id="intro-example" class="p-5 text-center bg-image "
-    style="background-image: url('../static/images/cafe/tandleg.jpg')">
+<div id="intro-example" class="p-5 text-center bg-image ">
     <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
-        <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="d-flex justify-content-center align-items-center h-50">
             <div class="text-white">
                 <h1 class="mb-3 animate__animated animate__fadeInLeft intro-text-cafe"><b> Plano Cafe</b></h1>
                 <h5 class="mb-4 animate__animated animate__fadeInRight sub-text-cafe"><b> Enjoy!</b></h5>
@@ -42,7 +41,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 {% endblock %}
 
@@ -52,6 +51,18 @@
 
 <div class="container cafefont">
     <div class="mt-4"></div>
+    <div class="d-flex justify-content-center align-items-center h-100" style="padding-top: 5%; padding-bottom:5%">
+        <div class="text-white text-center">
+            <h1 class="mb-3 animate__animated animate__fadeInLeft intro-text-cafe"><b> Plano Cafe</b></h1>
+            <h5 class="mb-4 animate__animated animate__fadeInRight sub-text-cafe"><b> Enjoy!</b></h5>
+            <a class="btn btn-outline-light btn-lg m-2" href="tel:972-517-7031" role="button" rel="nofollow"
+                style="min-width:195px">(972) 517-7031</a>
+            <a class="btn btn-outline-light btn-lg m-2"
+                href="https://www.grubhub.com/restaurant/indopak-supermarket-and-cafe-2060-w-spring-creek-pkwy-plano/1241688"
+                role="button" target="_blank" style="min-width:195px">Order on GrubHub</a>
+        </div>
+    </div>
+
     {% for type in data%}
     <div class="row my-3">
         {% for image in type['Images'] %}
