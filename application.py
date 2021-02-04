@@ -23,8 +23,8 @@ def home():
     return render_template('index.html')
 
 
-@application.route("/butcher")
-def butcher():
+@application.route("/halalmeat")
+def halalmeat():
     return render_template('butcher.html')
 
 
