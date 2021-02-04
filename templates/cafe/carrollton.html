@@ -48,7 +48,7 @@
 
 
 <div class="container cafefont">
-    
+
     <div class="d-flex justify-content-center align-items-center h-100" style="padding-top: 13%; padding-bottom: 8%">
         <div class="text-white text-center">
             <h1 class="mb-3 animate__animated animate__fadeInLeft intro-text-cafe"><b> Carrollton Cafe</b>
@@ -76,7 +76,7 @@
         {% for i in range(0,type['Items']|length) %}
 
         {% if i%2 == 0 %}
-        <div class="col-md-5 offset-md-2">
+        <div class="col-md-4 offset-md-2">
             <div class="row">
                 <div class="col-12" style="font-size:20px">
                     <p> <b> {{type['Items'][i]['name']}}</b></p>
@@ -89,7 +89,7 @@
             </div>
         </div>
         {% else %}
-        <div class="col-md-5">
+        <div class="col-md-4 offset-md-2">
             <div class="row">
                 <div class="col-12" style="font-size:20px">
                     <p> <b>{{type['Items'][i]['name']}}</b></p>
@@ -110,8 +110,6 @@
     {% endfor %}
     <div class=" mt-5">
         <p style="text-align:center">Images provided by <a href="https://www.google.com" target="_blank">Google</a>.
-        </p>
-        <p style="text-align:center">Disclaimer: Prices may vary.
         </p>
     </div>
 </div>
